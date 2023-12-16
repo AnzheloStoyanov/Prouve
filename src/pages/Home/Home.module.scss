@@ -1,0 +1,889 @@
+@use '../../assets/css/variables.scss' as helpers;
+
+.mainHomeContainer {
+    background-color: helpers.$lavender-blush-color;
+    padding: helpers.$globalPadding;
+
+    .mobileButton {
+        display: none;
+    }
+
+    .headerMainMobileTitle {
+        display: none;
+    }
+
+    .backgroundImageHomeHeader {
+        height: 70vh;
+        background-image: url(../../assets/images/hero-image.jpg);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        padding: 179px 4%;
+        background-position: 80%;
+    }
+
+    .homeHeaderMainCard {
+        position: relative;
+        width: 40%;
+        min-width: 350px;
+        background: helpers.$lavender-blush-color-transperent;
+        border: 1px solid helpers.$lavender-blush-color-transperent;
+        border-radius: 20px;
+        color: helpers.$plantation;
+        backdrop-filter: blur(40px);
+        padding: helpers.$globalPadding;
+        padding-bottom: 116px;
+
+        .headerMainCardTitle {
+            font: normal normal bold 112px/126px helpers.$YsabeauInfant;
+            letter-spacing: 0px;
+            opacity: 1;
+
+            span {
+                font-family: helpers.$YsabeauInfant;
+                font-weight: 200;
+                font-style: normal;
+                font-size: 4.688rem;
+                line-height: 88px;
+                text-transform: lowercase;
+
+                opacity: 1;
+            }
+        }
+
+        .headerMainCardDescription {
+            width: 83%;
+            display: flex;
+            font-family: helpers.$YsabeauInfant;
+            font-weight: 700;
+            font-size: helpers.$font-size-xl;
+            line-height: 27px;
+        }
+    }
+
+    .relativePosCard {
+        position: relative;
+        margin-left: -20px;
+
+        .headerMainCardIcon {
+            position: absolute;
+            left: -60px;
+            top: -60px;
+            z-index: 1;
+        }
+
+        .secondaryCard {
+            padding-top: 30px;
+            position: absolute;
+            width: 448px;
+            height: 295px;
+            border: 1px solid helpers.$lavender-blush-color;
+            background-color: helpers.$lavender-blush-color;
+            border: 1px solid helpers.$lavender-blush-color;
+            border-radius: 12px;
+            backdrop-filter: blur(50px);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            color: helpers.$plantation;
+            box-sizing: border-box;
+
+            .secondaryCardTitle {
+                display: flex;
+                width: 60%;
+                font: normal bold 64px/64px helpers.$YsabeauInfant;
+                text-align: center;
+                letter-spacing: 0px;
+            }
+
+            p {
+                font-weight: 600;
+                font-size: 20px;
+                margin-top: 10px;
+                font-family: helpers.$YsabeauInfant;
+                text-align: center;
+            }
+
+            .srcondaryButton {
+                /* Font properties */
+                font-family: helpers.$YsabeauInfant;
+                font-weight: bold;
+                font-size: 41px;
+                text-align: center;
+                text-decoration: underline;
+                cursor: pointer;
+
+            }
+        }
+    }
+
+    .productsHomeContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 80px;
+
+        .productsCardsContainer {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+    }
+}
+
+.buttonContainer {
+    height: 50px;
+}
+
+.productsHomeContainerTitle {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: helpers.$plantation;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+
+
+    h1 {
+        font-family: helpers.$YsabeauInfant;
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .titlePartTwo {
+        font-family: helpers.$YsabeauInfant;
+        text-align: right;
+        font-size: 75px;
+        font-weight: 200;
+    }
+}
+
+.backgroundImageLetMeetUs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+
+    .productsHomeContainerTitle {
+        width: 530px;
+    }
+
+    .meetUsContentContainer {
+        width: 56%;
+        padding: 30px;
+        color: helpers.$plantation;
+
+        svg {
+            width: 35px;
+            height: 35px;
+        }
+
+        .secondQuote {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+
+        }
+
+        .firstQuote {
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+
+        }
+
+        .signment {
+            display: flex;
+            justify-content: flex-end;
+
+            >div {
+                display: flex;
+                flex-direction: column;
+
+                h4 {
+                    margin: 0;
+                }
+
+                :first-child {
+                    font-size: 32px;
+                    font-family: helpers.$YsabeauInfant;
+                    font-weight: 900;
+                }
+
+                :last-child {
+                    font-size: 18px;
+                    font-family: helpers.$YsabeauInfant;
+                    font-weight: 200;
+
+                }
+            }
+        }
+    }
+
+    .meetUsContentLetter {
+        font-family: helpers.$YsabeauInfant;
+        font-weight: 500;
+        font-size: 18px;
+        padding: 0 35px;
+        p {
+            margin: 0px;
+            font-weight: 200;
+        }
+    }
+    }
+   
+
+.backgroundImageFirstClass {
+    background-image: url(../../assets/images/bg-първо-качество.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+
+    .productsHomeContainerTitle {
+        width: 32%;
+        margin: 58px 0 20px;
+
+        p {
+            text-align: center;
+            font-weight: 600;
+            font-size: 20px;
+            font-family: helpers.$YsabeauInfant;
+
+        }
+    }
+
+    .missingContent {
+        width: 61%;
+        font-family: helpers.$YsabeauInfant;
+        font-size: 100px;
+        text-align: center;
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+.blogContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: helpers.$lavender-blush-color;
+    padding-bottom: 80px;
+
+    .productsHomeContainerTitle {
+        width: 13%;
+        margin: 58px 0 20px;
+    }
+
+    .cardsContainer {
+
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr;
+        /* 60% - 20% - 20% */
+        width: 100%;
+        gap: 20px;
+        padding: 10px;
+        /* Add padding to separate the items */
+        box-sizing: border-box;
+    }
+}
+
+.choseUsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 58px;
+
+    .productsHomeContainerTitle {
+        width: 30%;
+        margin: 58px 0 20px;
+    }
+
+    .choseUsContainerIcons {
+        width: 65%;
+        display: flex;
+        justify-content: space-between;
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 25%;
+            color: helpers.$plantation;
+            font-family: helpers.$YsabeauInfant;
+            font-size: 18px;
+
+            span {
+                font-weight: 800;
+            }
+
+            p {
+                text-align: center;
+                font-weight: 500;
+                padding: 0px 45px;
+            }
+        }
+    }
+}
+
+.contactUsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: helpers.$lavender-blush-color;
+    padding-bottom: 80px;
+
+    .productsHomeContainerTitle {
+        width: 20%;
+        margin-bottom: 80px;
+    }
+
+    .mainContactUsContainer {
+        display: grid;
+        grid-template-columns: 1.1fr 0.8fr 1.1fr;
+        /* Each child div takes 1 fraction of the available width */
+        width: 100%;
+        background-color: helpers.$kobi-color;
+        color: helpers.$oracle-color;
+        font-family: helpers.$YsabeauInfant;
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+
+        .contactForm {
+            padding: 0 17%;
+
+            form {
+                width: 100%;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+
+                .acceptPolicy {
+                    display: flex;
+                    align-items: flex-start;
+                }
+
+                .buttonContainer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                label {
+                    display: block;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                }
+
+                input[type="text"],
+                input[type="email"],
+                textarea {
+                    width: 100%;
+                    height: 50px;
+                    margin-bottom: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    box-sizing: border-box;
+                }
+
+                input[type="text"]::placeholder,
+                input[type="email"]::placeholder,
+                textarea::placeholder {
+                    font-family: helpers.$YsabeauInfant;
+
+                }
+
+                textarea {
+                    resize: vertical;
+                    min-height: 230px;
+                }
+
+                input[type="checkbox"] {
+                    margin-right: 5px;
+                    vertical-align: middle;
+                }
+
+                a {
+                    color: helpers.$oracle-color;
+                    font-weight: 800;
+                }
+
+                input[type="submit"] {
+                    background-color: #007bff;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    transition: background-color 0.3s;
+                }
+
+                input[type="submit"]:hover {
+                    background-color: #0056b3;
+                }
+            }
+
+        }
+
+        .middleImage {
+            background-image: url(../../assets/images/contacts-image.png);
+            background-size: cover;
+        }
+
+        .contactsContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .contactsContainerInner {
+                >div {
+                    display: flex;
+                    align-items: baseline;
+                    gap: 5px;
+                }
+
+                .locationContainerCol {
+                    flex-direction: row;
+                }
+            }
+
+            .locatioins {
+                >img {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+.locationContainerM {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    div {
+        .phone {
+            width: 45px;
+            height: 45px;
+        }
+
+        .mail {
+            width: 29px;
+            height: 21px;
+        }
+    }
+
+    >div {
+        display: flex;
+        align-items: baseline;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .relativePosCard {
+        display: none;
+    }
+
+    .mainHomeContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10%;
+        align-items: center;
+
+        .mobileButton {
+            display: none;
+        }
+
+        .homeHeaderMainCard {
+            display: none;
+        }
+
+        .headerMainMobileTitle {
+            display: block;
+            font: normal normal bold 50px/63px helpers.$YsabeauInfant;
+            letter-spacing: 0px;
+            opacity: 1;
+            white-space: break-spaces;
+            margin-top: 50px;
+
+            span {
+                font-family: helpers.$YsabeauInfant;
+                font-weight: 200;
+                font-style: normal;
+                font-size: 40px;
+                line-height: 88px;
+                text-transform: lowercase;
+
+                opacity: 1;
+            }
+        }
+
+        .backgroundImageHomeHeader {
+            height: 321px;
+            border-radius: 25px;
+            padding: 0;
+            width: 100%;
+            background-size: cover;
+            background-position-x: right;
+            background-position-y: center;
+            margin-bottom: 50px;
+        }
+
+        .productsHomeContainer {
+            .productsCardsContainer {
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+
+            .productsHomeContainerTitle {
+                width: auto;
+                color: helpers.$plantation;
+
+                h1 {
+                    font-family: helpers.$YsabeauInfant;
+                    font-size: 36px;
+                    margin: 0;
+                }
+
+                .titlePartTwo {
+                    font-family: helpers.$YsabeauInfant;
+                    text-align: right;
+                    font-size: 30px;
+                    font-weight: 200;
+                    margin-left: 50px;
+                }
+            }
+        }
+
+
+    }
+
+    .backgroundImageLetMeetUs {
+        background-position: 80%;
+        .productsHomeContainerTitle {
+            width: 90%;
+            display: flex;
+            align-items: center;
+
+            h1 {
+
+                font-size: 30px;
+            }
+
+            .titlePartTwo {
+                font-size: 30px;
+            }
+        }
+
+        .meetUsContentContainer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 0 100px 0;
+
+            svg {
+                width: 18px;
+                height: 18px;
+            }
+
+            .meetUsContentLetter {
+                padding: 0 18px;
+
+                p {
+                    margin: 0px;
+                    font-weight: 200;
+                }
+            }
+
+            .signment {
+                display: flex;
+                justify-content: flex-end;
+
+                >div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                :first-child {
+                    font-size: 18px;
+                }
+
+                h4 {
+                    font-size: 16px;
+                }
+            }
+        }
+
+    }
+
+    .backgroundImageFirstClass {
+        >p {
+            font-family: helpers.$YsabeauInfant;
+            font-weight: 600;
+            color: helpers.$plantation;
+        }
+
+        .productsHomeContainerTitle {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1 {
+                font-family: helpers.$YsabeauInfant;
+                font-size: 36px;
+                margin: 0;
+                text-align: center;
+            }
+
+            .titlePartTwo {
+                font-family: helpers.$YsabeauInfant;
+                text-align: right;
+                font-size: 30px;
+                font-weight: 200;
+                margin-left: 50px;
+            }
+        }
+
+        .missingContent {
+            width: 100%;
+            max-width: 700px;
+            font-family: "YsabeauInfant";
+            font-size: 100px;
+            text-align: center;
+            margin-bottom: 60px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+
+    .choseUsContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding-bottom: 80px;
+
+        .productsHomeContainerTitle {
+            width: auto;
+
+            h1 {
+                font-family: helpers.$YsabeauInfant;
+                font-size: 36px;
+                margin: 0;
+            }
+
+            .titlePartTwo {
+                font-family: helpers.$YsabeauInfant;
+                text-align: right;
+                font-size: 30px;
+                font-weight: 200;
+            }
+        }
+
+        .choseUsContainerIcons {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            >div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: auto;
+                color: helpers.$plantation;
+                font-family: helpers.$YsabeauInfant;
+                font-size: 18px;
+
+                span {
+                    font-weight: 800;
+                }
+
+                p {
+                    text-align: center;
+                    font-weight: 500;
+                    padding: 0px 45px;
+                }
+            }
+        }
+    }
+
+    .blogContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: helpers.$lavender-blush-color;
+        padding-bottom: 80px;
+
+        .productsHomeContainerTitle {
+            width: auto;
+
+            h1 {
+                font-family: helpers.$YsabeauInfant;
+                font-size: 36px;
+                margin: 0;
+            }
+
+            .titlePartTwo {
+                font-family: helpers.$YsabeauInfant;
+                text-align: right;
+                font-size: 30px;
+                font-weight: 200;
+            }
+        }
+
+        .cardsContainerMobile {
+            display: flex;
+            flex-direction: column;
+
+            .secondElemenetCardsContainer {
+                display: flex;
+                gap: 2%;
+                
+                    
+                }
+        }
+
+        .cardsContainerMobile>* {
+            padding: 10px;
+            /* Add padding to separate the items */
+            box-sizing: border-box;
+            // :last-child{
+            //     display: flex;
+            //     f
+            // }
+        }
+    }
+
+    .contactUsContainer {
+        background-color: rgba(234, 156, 183, 0.2);
+
+        .productsHomeContainerTitle {
+            width: auto;
+
+            h1 {
+                font-family: helpers.$YsabeauInfant;
+                font-size: 36px;
+                margin: 0;
+            }
+
+            .titlePartTwo {
+                font-family: helpers.$YsabeauInfant;
+                text-align: right;
+                font-size: 30px;
+                font-weight: 200;
+            }
+        }
+
+        .mainContactUsContainer {
+            display: flex;
+            flex-direction: column;
+
+            .middleImage {
+                height: 15vh;
+            }
+
+            .contactForm {
+                padding: 0 8% 8%;
+            }
+        }
+    }
+
+    .locationContainerM {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+
+        img {
+            width: 24px;
+        }
+
+    }
+
+    .contactsContainerInner>div {
+        flex-direction: column;
+    }
+
+    .locationContainerM {
+        flex-direction: column;
+
+        >div {
+            display: flex;
+
+            >div {
+                display: flex;
+            }
+        }
+
+        img {
+            width: 30px;
+            height: 35px;
+        }
+
+        .locatioins {
+            img {
+                width: 10px;
+                height: 14px;
+            }
+        }
+
+        .locationContainerTitle {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            >img {
+
+                width: 12px;
+                height: 20px;
+            }
+        }
+    }
+
+}
+
+.contactsContainerInner {
+    background-color: rgba(234, 156, 183, 0.2) !important;
+    padding: 25px;
+}
+
+.locationContainerCol {
+    flex-direction: column;
+}

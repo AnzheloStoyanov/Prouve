@@ -1,0 +1,27 @@
+@use '../../../assets/css/variables.scss' as v;
+
+.activeOrders,
+.completedOrders {
+    background-color: white;
+    border-radius: 24px;
+    padding: 45px 40px;  
+
+    @media screen and (max-width:1000px) {
+        div> div {
+            flex-direction: column;
+            justify-content: center;
+            text-align: start;
+        }
+    }
+}
+
+.activeOrders {
+    margin-bottom: 56px;
+}
+
+.sectionHeader {
+    font-size: 40px;
+    font-family: v.$YsabeauInfant;
+    font-weight: bold;
+    color: v.$color-dark-green;
+}

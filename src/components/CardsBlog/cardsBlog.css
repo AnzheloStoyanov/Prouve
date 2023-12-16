@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Sans-Trial-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Regular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Bold.otf");
+  font-weight: 700;
+}
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 32px */
+/* 48px */
+/* 72px */
+.bahurDesc {
+  font-weight: normal;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  max-height: 5.6em;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+@media (min-width: 1300px) and (max-width: 1500px) {
+  .bahurDesc {
+    max-height: 3.6em;
+  }
+  .cardsContnet {
+    padding: 10px 2% !important;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1299px) {
+  .cardsContnet {
+    padding: 10px 2% !important;
+  }
+  .bahurDesc {
+    max-height: 0rem;
+  }
+  .cardsContentTitle {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    max-height: 2.6em;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  /* Your styles for the specified range of widths */
+}
+.cardsContentTitleMobie {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  max-height: 2.6em;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.imgWrapper {
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.innerImg {
+  transition: transform 0.3s;
+  /* Apply transition to transform property */
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.innerImg:hover {
+  background-position: 150%;
+  /* Scale on hover */
+}
+
+/* Other styling elements, that are not necessary for the example */
+.cardsContnet {
+  height: 60%;
+  width: 100%;
+  position: absolute;
+  padding: 10px 15%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: white;
+  bottom: 0;
+  font-family: "YsabeauInfant";
+  background-image: url(../../assets/images/BlogTitleBackGround.png);
+  background-position: top;
+  background-size: cover;
+}
+.cardsContnet > * {
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+  /* Apply transition to transform property */
+}
+.cardsContnet .cardsContentTitle {
+  font-weight: 800;
+}
+.cardsContnet a {
+  font-weight: bold;
+  color: white;
+}
+
+/* Apply scaling effect to text on hover */
+.innerImg:hover ~ .cardsContnet > * {
+  transform: scale(1.1);
+  left: 13%;
+}
+
+@media (max-width: 1000px) {
+  .cardsContnet {
+    left: 0;
+    width: auto;
+    position: absolute;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: white;
+    bottom: 0;
+    font-family: "YsabeauInfant";
+  }
+  .cardsContnet > * {
+    margin-bottom: 0px;
+    transition: transform 0.3s;
+    /* Apply transition to transform property */
+  }
+  .cardsContnet .cardsContentTitle {
+    font-weight: 800;
+    font-size: 14px;
+  }
+  .cardsContnet .cardsContentDescription {
+    font-weight: normal;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    max-height: 1.6em;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .cardsContnet a {
+    font-weight: bold;
+    color: white;
+  }
+  .innerImg {
+    height: 240px;
+  }
+}/*# sourceMappingURL=cardsBlog.css.map */

@@ -1,0 +1,13 @@
+.mobilePositioning {
+    overflow-x: scroll;
+
+    .similarProductsCards {
+        width: 250%;
+    }
+}
+
+.similarProductsCards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}

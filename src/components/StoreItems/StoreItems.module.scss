@@ -1,0 +1,55 @@
+@use '../../assets/css/variables.scss' as v;
+
+.showInLine {
+    display: flex;
+    padding: 30px 30px 30px 20%;
+    justify-content: space-between;
+
+    .somePadding {
+        padding-left: 30px;
+    }
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.dummyWidth {
+    width: 28%;
+}
+
+.wrapper {
+    display: flex;
+
+    >:first-child {
+        width: 500px;
+    }
+
+    .floatRight {
+        float: right;
+    }
+
+    .paginationPadding {
+        padding-bottom: 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .showInLine {
+        padding: 20px 0;
+        margin: 25px 0;
+        border: 1px solid v.$color-dark-pink;
+        border-left: none;
+        border-right: none;
+    }
+
+    .wrapper {
+        display: block;
+    }
+
+    .dummyWidth {
+        width: 48%;
+    }
+}

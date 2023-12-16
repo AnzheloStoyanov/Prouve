@@ -1,0 +1,21 @@
+.buttonSection {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.updateAddressTextarea, .updateNameTextarea {
+  background-color: transparent;
+  width: 100%;
+  resize: none;
+  padding: 5px;
+  border-radius: 12px;
+}
+
+.updateAddressTextarea {
+  height: 44px;
+}
+
+.updateNameTextarea {
+  height: 30px;
+}/*# sourceMappingURL=DeliveryAddressLine.module.css.map */

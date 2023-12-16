@@ -1,0 +1,222 @@
+@use '../../assets/css/variables.css' as v;
+
+.wrapper {
+    user-select: none;
+}
+
+.somePadding {
+    padding: 20px 0;
+}
+
+.separate {
+    >::before {
+        content: "";
+        border-top: 3px solid #00000014;
+        width: -webkit-fill-available;
+        position: absolute;
+        left: 0;
+    }
+
+    img {
+        padding-left: 0;
+    }
+
+    padding-bottom: 10px;
+}
+
+.profileWrapper {
+    display: flex;
+    margin: 133px 100px 88px 100px;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.menuSection {
+    flex: 0 1 auto;
+    min-width: 350px;
+    max-width: 400px;
+    height: 500px;
+    overflow: hidden;
+}
+@media screen and (max-width:1000px) {
+    .profileWrapper {
+        flex-direction: column;
+        align-items: center;
+        margin: 22px 36px 20px 36px;
+    }
+
+    .generalProfileSection {
+        max-width: 317px !important;
+    }
+
+    .menuSection {
+        min-width: 0px !important;
+        width: 100% !important;
+        height: unset !important;
+    }
+}
+
+
+.generalProfileSection {
+    flex: 1 1 auto;
+    max-width: 1200px;
+}
+
+.labelContainer {
+    display: flex;
+    width: 100%;
+    background-color: v.$color-dark-green;
+    border-radius: 16px;
+    color: white;
+    font-family: v.$YsabeauInfant;
+    height: 66px;
+    align-items: center;
+    margin-bottom: 16px;
+
+    &>button {
+        color: white;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+    }
+
+    &>span {
+        width: 100%;
+        margin-right: 30px;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 32px;
+    }
+}
+
+.settingsSection {
+    padding: 40px;
+    background-color: white;
+    border-radius: 16px;
+    width: auto;
+    height: 810;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.sectionHeader {
+    font-family: v.$YsabeauInfant;
+    font-size: 40px;
+    color: v.$color-dark-green;
+    height: 53px;
+    padding: 5px;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.settingsForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.personalDataForm,
+.securityForm {
+    width: 50%;
+}
+
+.formTitle {
+    font-size: 24px;
+    font-family: v.$YsabeauInfant;
+    font-weight: bold;
+    color: v.$color-dark-green;
+    margin-bottom: 16px;
+    height: 51px;
+}
+
+.formsWrapper {
+    display: flex;
+    gap: 75px;
+    margin-bottom: 47px;
+}
+
+.preferencesSection {
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.addressSection,
+.alergenSection {
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    border-radius: 16px;
+    padding: 40px;
+}
+
+.allergenList {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    list-style-type: none;
+    list-style-position: inside;
+    align-items: end;
+    padding-left: 0;
+
+    &>li {
+        display: flex;
+    }
+}
+
+.allergenCheckbox {
+    display: flex;
+    margin-bottom: 20px;
+    font-family: v.$YsabeauInfant;
+    font-size: 18px;
+    color: v.$color-dark-green;
+    align-items: center;
+}
+
+.addressList {
+    list-style-type: none;
+    padding-left: 0;
+
+    &>li {
+        font-family: v.$YsabeauInfant;
+        color: v.$color-dark-green;
+        font-size: 18px;
+
+        &>p {
+            font-weight: bold;
+            font-size: 24px;
+        }
+    }
+}
+
+.buttonSection {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.changeAddressSection {
+    display: flex;
+    justify-content: center;
+}
+
+.inputWrapper {
+    width: 100%;
+    height: 80px;
+
+    & img {
+        height: 15px;
+        align-self: end;
+        position: relative;
+        bottom: 30px;
+        left: 90%;
+    }
+
+    &>div {
+        width: 100%;
+    }
+}

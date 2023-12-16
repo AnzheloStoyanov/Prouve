@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Sans-Trial-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Regular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Bold.otf");
+  font-weight: 700;
+}
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 32px */
+/* 48px */
+/* 72px */
+.background {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../assets/images/404-bg.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentWrapper {
+  color: #38736F;
+  width: 640px;
+  text-align: center;
+  margin-top: 350px;
+}
+
+.headText {
+  font-family: "YsabeauInfant";
+  font-size: 3rem;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+.subHeadText {
+  font-family: "YsabeauInfant";
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 36px;
+}
+
+.buttonContainer {
+  height: 50px;
+}
+
+@media (max-width: 1000px) {
+  .background {
+    background-image: url("../../assets/images/404-mobile-bg.png");
+    background-size: initial;
+    background-repeat: no-repeat;
+  }
+  .headText {
+    font-size: 2rem;
+  }
+  .subHeadText {
+    font-size: 1.125rem;
+  }
+}/*# sourceMappingURL=NotFound.module.css.map */

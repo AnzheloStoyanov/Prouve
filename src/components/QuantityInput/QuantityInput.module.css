@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Sans-Trial-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Regular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Bold.otf");
+  font-weight: 700;
+}
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 32px */
+/* 48px */
+/* 72px */
+.QuantityInput {
+  font-weight: 400;
+  color: #131313;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.QuantityInput input {
+  font-size: 1rem;
+  font-weight: 400;
+  color: inherit;
+  background: transparent;
+  border: 1px solid #C3D5D3;
+  border-radius: 6px;
+  margin: 0 4px;
+  padding: 10px 2px;
+  width: 34px;
+  text-align: center;
+}
+.QuantityInput input::-webkit-outer-spin-button, .QuantityInput input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.QuantityInput input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.QuantityInput input:focus {
+  box-shadow: 0 0 0 1px #131313;
+  border: 1px solid #C3D5D3;
+}
+
+.QuantityInput input:focus-visible {
+  outline: 0;
+}
+
+.QuantityInput .btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+  line-height: 1.5;
+  border: 0;
+  border-radius: 6px;
+  width: 22px;
+  height: 40px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  color: #131313;
+  background-color: #C3D5D3;
+}
+
+.QuantityInput .btn:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=QuantityInput.module.css.map */

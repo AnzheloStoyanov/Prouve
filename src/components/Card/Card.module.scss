@@ -1,0 +1,53 @@
+@use "../../assets/css/variables.scss" as v;
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    text-transform: none;
+    max-width: 398px;
+
+    >div:first-child {
+        background-color: v.$color-dark-green;
+        color: white;
+        height: 116px;
+        line-height: 116px;
+        text-align: center;
+        border-radius: 30px 30px 0 0;
+        width: auto;
+
+        @media screen and (max-width: 1000px) {
+            height: 79px;
+        }
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+            font-size: 48px;
+            font-family: v.$YsabeauInfant;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+
+            @media screen and (max-width: 1000px) {
+                font-size: 40px;
+                vertical-align: baseline;
+            }
+
+        }
+    }
+
+    >div:last-child {
+        color: v.$color-dark-green;
+        background-color: white;
+        font-family: v.$YsabeauInfant;
+        border-radius: 0 0 30px 30px;
+        font-size: 24px;
+        overflow: hidden;
+
+        @media screen and (max-width: 1000px) {
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Sans-Trial-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Regular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Bold.otf");
+  font-weight: 700;
+}
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 32px */
+/* 48px */
+/* 72px */
+.blogPostContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blogPostContainer h1 {
+  font-family: "YsabeauInfant";
+  font-size: 64px;
+  color: #131313;
+}
+.blogPostContainer .img-container {
+  width: 100%;
+  padding-top: 40.29%;
+  position: relative;
+}
+.blogPostContainer .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blogPostContainer img {
+  width: 57%;
+  max-height: 440px;
+  min-height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+}
+.blogPostContainer .blogPostMetaInfo {
+  width: 57%;
+  margin-top: 25px;
+  color: #131313;
+  font-family: "YsabeauInfant";
+}
+.blogPostContainer .blogPostMetaInfo span {
+  align-self: flex-start;
+}
+.blogPostContainer .blogPostMetaInfo p {
+  font-family: "YsabeauInfant";
+  font-size: 24px;
+}
+.blogPostContainer .blogPostBottomBar {
+  border-width: 1px 0;
+  border-color: rgb(54, 56, 57);
+  border-style: solid;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.blogPostContainer .blogPostBottomBar > div {
+  display: flex;
+  align-items: center;
+}
+.blogPostContainer .blogPostBottomBar > div > p {
+  margin-left: 10px;
+}
+
+@media (max-width: 1000px) {
+  .blogPostContainer h1 {
+    font-size: 40px;
+  }
+  .blogPostContainer img {
+    width: 82%;
+    --min-height: 140px;
+    min-height: var(--min-height);
+    height: calc(var(--min-height) / 0.82);
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 16px;
+  }
+  .blogPostContainer .blogPostMetaInfo {
+    width: 82%;
+    margin-top: 25px;
+    color: #131313;
+    font-family: "YsabeauInfant";
+  }
+  .blogPostContainer .blogPostMetaInfo span {
+    align-self: flex-start;
+    font-size: 10px;
+  }
+  .blogPostContainer .blogPostMetaInfo p {
+    font-family: "YsabeauInfant";
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=BlogPost.module.css.map */

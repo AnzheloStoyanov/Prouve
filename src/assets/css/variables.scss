@@ -1,0 +1,95 @@
+// Fonts
+// @font-face {
+//     font-family: 'YsabeauInfant';
+//     src: url('assets/fonts/YsabeauInfant/YsabeauInfant-VariableFont_wght.ttf');
+// }
+@font-face {
+    font-family: 'YsabeauInfant';
+    src: url('assets/fonts/Montserrat/static/Montserrat-Black.ttf');
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'YsabeauInfant';
+    src: url('assets/fonts/Montserrat/static/Montserrat-Bold.ttf');
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'YsabeauInfant';
+    src: url('assets/fonts/Montserrat/static/Montserrat-Light.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'YsabeauInfant';
+    src: url('assets/fonts/Montserrat/static/Montserrat-Medium.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'YsabeauInfant';
+    src: url('assets/fonts/Montserrat/static/Montserrat-Medium.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'YsabeauInfant';
+    src: url('assets/fonts/Montserrat/static/Montserrat-Light.ttf');
+    font-weight: 200;
+    
+}
+
+@font-face {
+    font-family: 'BackwardsSans';
+    src: url('assets/fonts/Backwards-Sans-Trial/Backwards-Sans-Trial-Light.otf');
+    font-weight: 300;
+    
+}
+@font-face {
+    font-family: 'BackwardsSans';
+    src: url('assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Regular.otf');
+    font-weight: 500;
+    
+}
+@font-face {
+    font-family: 'BackwardsSans';
+    src: url('assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Bold.otf');
+    font-weight: 700;
+    
+}
+
+// 
+$YsabeauInfant: 'YsabeauInfant';
+$YsabeauInfant: 'YsabeauInfant';
+$YsabeauInfant: 'YsabeauInfant';
+// Font sizes
+
+//Colors named by https://chir.ag/projects/name-that-color
+$oracle-color: #131313;
+$plantation:#131313;
+$white-color: #FFFFFF;
+$lavender-blush-color:#FFF5F9;
+$lavender-blush-color-transperent:rgb(255 255 255 / 62%);
+$kobi-color:#EA9CB7;
+
+;
+//colors // dont touch them, later in the project weill be merged into one;
+$color-dark-green: #131313;
+$color-background-green: #38736F;
+$color-light-green: #C3D5D3;
+$color-gray: #999999;
+$color-light-pink: white;
+$color-dark-pink: #076865;
+$color-light-blue: #D7E3E2; 
+
+// font-sizes
+$footer-padding: 39px 7.3%;
+
+$font-size-xs: 0.75rem;   /* 12px */
+$font-size-sm: 0.875rem;  /* 14px */
+$font-size-md: 1rem;      /* 16px */
+$font-size-lg: 1.125rem;  /* 18px */
+$font-size-xl: 1.25rem;   /* 20px */
+$font-size-xxl: 1.5rem;   /* 24px */
+$font-size-2xl: 2rem;     /* 32px */
+$font-size-3xl: 3rem;     /* 48px */
+$font-size-4xl: 4.5rem;   /* 72px */
+
+// padding
+$globalPadding: 0 3%;

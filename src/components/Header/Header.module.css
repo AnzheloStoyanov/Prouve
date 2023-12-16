@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Sans-Trial-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Regular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Bold.otf");
+  font-weight: 700;
+}
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 32px */
+/* 48px */
+/* 72px */ 
+.headerWrapper {
+  padding-top: 61px;
+  color: white;
+  display: flex;
+}
+.headerWrapper .logo {
+  width: 20%;
+}
+.headerWrapper .logo img {
+  height: auto;
+  position: static;
+}
+.headerWrapper svg {
+  color: black;
+}
+.headerWrapper .rightAlign {
+  align-items: right;
+}
+
+@media (max-width: 1000px) {
+  .headerWrapper {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .headerWrapper .header {
+    justify-content: center;
+  }
+  .headerWrapper .logo {
+    width: 40%;
+  }
+  .headerWrapper .logo > img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100%;
+  }
+  .headerWrapper svg {
+    width: 45px;
+    height: 45px;
+  }
+  .headerWrapper .rightIcons {
+    display: none;
+  }
+  .headerWrapper .rightIcons > li {
+    margin-left: 20px;
+  }
+}/*# sourceMappingURL=Header.module.css.map */

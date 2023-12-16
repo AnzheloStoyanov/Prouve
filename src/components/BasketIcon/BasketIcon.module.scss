@@ -1,0 +1,13 @@
+.wrapper {
+    position: relative;
+
+    >div {
+        position: absolute;
+        bottom: -5px;
+        color: black;
+        right: -5px;
+        background-color: #ffffff96;
+        border-radius: 20px;
+        padding: 1px 7px;
+    }
+}

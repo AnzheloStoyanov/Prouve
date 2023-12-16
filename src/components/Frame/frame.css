@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Sans-Trial-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Regular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Bold.otf");
+  font-weight: 700;
+}
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 32px */
+/* 48px */
+/* 72px */
+.frame {
+  background-image: url(../../assets/images/frame-badge.svg);
+  width: 255px;
+  height: 255px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #131313;
+  font-weight: 700;
+}
+.frame .frameDescription {
+  font-weight: 700;
+  font-family: "YsabeauInfant";
+}
+.frame .frameDescription {
+  font-size: 1rem;
+  font-family: "YsabeauInfant";
+}
+
+@media (max-width: 1000px) {
+  .frame {
+    background-image: url(../../assets/images/frame-badge.svg);
+    width: 100px;
+    height: 100px;
+    padding: 13px;
+  }
+  .frame .frameTitle {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "YsabeauInfant";
+  }
+  .frame .frameDescription {
+    font-size: 14px;
+    display: flex;
+    white-space: break-spaces;
+    font-family: "YsabeauInfant";
+  }
+}/*# sourceMappingURL=frame.css.map */

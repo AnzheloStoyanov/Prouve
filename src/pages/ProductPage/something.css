@@ -1,0 +1,28 @@
+/* Carousel.scss */
+.carousel {
+  /* Your carousel container styles */
+  /* You can style the size, margins, and other properties here */
+}
+.carousel .carousel-container {
+  display: flex;
+  /* Add styles for the container that holds the slides */
+}
+.carousel .carousel-slide {
+  width: 100%;
+  /* Add styles for individual slides */
+}
+.carousel .carousel-slide.active {
+  /* Styles for the active slide */
+}
+.carousel .prev, .carousel .next {
+  /* Styles for previous and next buttons */
+}
+.carousel .carousel-dots {
+  /* Styles for the dot navigation */
+}
+.carousel .carousel-dots .dot {
+  /* Styles for individual dots */
+}
+.carousel .carousel-dots .dot.active {
+  /* Styles for the active dot */
+}/*# sourceMappingURL=something.css.map */

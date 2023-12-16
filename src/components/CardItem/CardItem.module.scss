@@ -1,0 +1,49 @@
+@use '../../assets/css/variables.scss' as v;
+
+.wrapper,
+.wrapperSelected {
+    height: 96px;
+    line-height: 96px;
+    margin-left: 10px;
+    font-weight: 400;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+
+    img,
+    span {
+        vertical-align: middle;
+        line-height: normal;
+    }
+
+    span {
+        display: inline-block !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+
+    img {
+        padding: 0 25px 0 25px;
+    }
+
+    
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+.wrapperSelected {
+    background-color: rgba(v.$color-background-green, 0.1);
+    border-left: 20px solid v.$color-background-green;
+    margin-left: 0px;
+    width: auto;
+
+    img {
+        padding: 0 25px 0 15px !important;
+    }
+}

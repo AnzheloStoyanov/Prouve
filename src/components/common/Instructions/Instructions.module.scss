@@ -1,0 +1,19 @@
+@use '../../../assets/css/variables.scss' as v;
+
+.instructions {
+    font-family: v.$YsabeauInfant;
+    font-size: 16px;
+    color: v.$color-gray;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.header{
+    font-family: v.$YsabeauInfant;
+    font-size: 40px;
+    color: v.$color-dark-green;
+    height: 53px;
+    padding: 5px;
+    font-weight: bold;
+}

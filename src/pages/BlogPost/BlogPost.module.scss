@@ -1,0 +1,101 @@
+@use '../../assets/css/variables.scss' as helpers;
+
+.blogPostContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-family: helpers.$YsabeauInfant;
+        font-size: 64px;
+        color: helpers.$plantation;
+        ;
+
+    }
+    .img-container {
+        width: 100%;
+        padding-top: 40.29%; // This sets the aspect ratio (height as a percentage of width)
+        position: relative;
+      
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; // Maintain aspect ratio and cover the container
+        }
+      }
+      
+
+    img {
+        width: 57%;
+        max-height: 440px;
+        min-height: 140px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+    .blogPostMetaInfo {
+        width: 57%;
+        margin-top: 25px;
+        color: helpers.$plantation;
+        font-family: helpers.$YsabeauInfant;
+
+        span {
+            align-self: flex-start;
+        }
+
+        p {
+            font-family: helpers.$YsabeauInfant;
+            font-size: 24px;
+        }
+    }
+    .blogPostBottomBar{
+        border-width: 1px 0;
+        border-color:rgb(54, 56, 57);
+        border-style: solid;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        >div{
+            display: flex;
+            align-items: center;
+            >p{
+                margin-left: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .blogPostContainer {
+        h1 {
+            font-size: 40px;            
+        }
+    
+        img {
+            width: 82%;
+            --min-height: 140px;
+            min-height: var(--min-height);
+            height: calc(var(--min-height) / 0.82); 
+            object-fit: cover;
+            border-radius: 16px;
+          }
+          
+        .blogPostMetaInfo {
+            width: 82%;
+            margin-top: 25px;
+            color: helpers.$plantation;
+            font-family: helpers.$YsabeauInfant;
+    
+            span {
+                align-self: flex-start;
+                font-size: 10px;
+            }
+    
+            p {
+                font-family: helpers.$YsabeauInfant;
+                font-size: 16px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,25 @@
+.root {
+  min-height: 100vh;
+  background: radial-gradient(circle, rgb(34, 70, 66) 0%, rgb(56, 115, 111) 45%);
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #FFF;
+  padding: 50px 0;
+}
+
+.header {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 48px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dataGrid {
+  border: 2px dashed #FFF;
+  margin: 1rem;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.disabledRow {
+  text-decoration: line-through;
+}/*# sourceMappingURL=UsersManagement.module.css.map */

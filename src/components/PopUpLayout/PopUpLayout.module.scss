@@ -1,0 +1,34 @@
+@use '../../assets/css/variables.scss' as helpers;
+
+
+
+.popUpLayOut {
+    position: fixed;
+    width: 100%;
+    min-height: 100%;
+    z-index: 101;
+   
+}
+
+.popUpLayOut::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bahur {
+    background-color: helpers.$oracle-color;
+    padding: 15px;
+    z-index: 102;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+
+}

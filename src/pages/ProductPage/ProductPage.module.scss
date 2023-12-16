@@ -1,0 +1,229 @@
+@use '../../assets/css/variables.scss' as helpers;
+
+h1 {
+    font-family: helpers.$YsabeauInfant;
+    font-size: 40px;
+}
+
+p,
+h4 {
+    font-family: helpers.$YsabeauInfant ;
+    font-size: 20px;
+}
+
+.falseAlergen {
+    background: #ebf1f0;
+
+}
+
+.falseAlergen,
+.trueAlergen {
+    display: flex;
+    width: 250px;
+    padding: 10px 30px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.productMainContainer {
+    font-family: helpers.$YsabeauInfant ;
+    color: helpers.$plantation;
+    padding: 0 6%;
+    margin-top: 100px;
+
+    .goBackButton {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    .carouselAndMainInfo {
+        display: flex;
+
+    }
+
+    .productMainInfo {
+        max-width: 23vw;
+        margin-left: 150px;
+        margin-left: 9vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+
+        .productCount {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            span {
+                margin-right: 10px;
+                font-size: 20px;
+            }
+
+            button {
+                top: 764px;
+                width: 18px;
+                height: 37px;
+                /* UI Properties */
+                background: rgba(56, 115, 111, 0.2);
+                border-radius: 5px;
+                border-width: 0;
+                text-align: center;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            input {
+
+                width: 34px;
+                height: 35px;
+                text-align: center;
+                border: 1px solid rgba(56, 115, 111, 0.3);
+                ;
+                border-radius: 5px;
+                margin: 0 5px;
+
+            }
+
+            input:focus {
+                outline: none;
+            }
+        }
+
+        .buttonContainer {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 70px;
+        }
+    }
+
+    .tabsHeader {
+        height: 70px;
+        display: flex;
+        border-radius: 20px 20px 0 0;
+
+        background: #ebf1f0;
+
+        div {
+            height: 100%;
+            display: flex;
+            padding: 0 1.6vw;
+            border-width: 0;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+
+
+        }
+
+    }
+
+    .tabsInfo {
+        padding: 30px 30px 100px;
+        background: white;
+        border-radius: 0 0 20px 20px;
+
+
+    }
+
+    .tabs {
+        margin-top: 90px;
+        margin-bottom: 100px;
+
+        .tabOne {
+            border-radius: 20px 0 0 0;
+        }
+    }
+}
+
+.reviewRate {
+    display: flex;
+    align-items: center;
+
+}
+
+.ClientsComments {
+    background-color: rgba(234, 156, 183, 0.2);
+    padding: 40px 6%;
+
+    p {
+        margin-top: 0;
+    }
+
+    h4 {
+        margin: 0;
+    }
+}
+
+.SimilarProducts {
+    padding: 0 6%
+}
+
+.ClientsProfileImg {
+    width: 80px;
+    height: 80px;
+    background: #EA9CB7;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.clientsDetails {
+    display: flex;
+}
+
+.SimilarProductsCards {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 1000px) {
+    .productMainContainer {
+        .carouselAndMainInfo {
+            flex-direction: column;
+            align-items: center;
+
+            .navigation-wrapper {
+                position: relative;
+                height: 81vw;
+                width: 81vw;
+            }
+
+            .productMainInfo {
+                width: 85vw;
+                max-width: unset;
+
+                h1 {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .reviewRate {
+        display: none;
+    }
+
+    .SimilarProductsCards {
+        flex-wrap: wrap;
+    }
+
+    .falseAlergen,
+    .trueAlergen {
+        display: flex;
+        width: 100%;
+        padding: 10px 30px;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }
+}

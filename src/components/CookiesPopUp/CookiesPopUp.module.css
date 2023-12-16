@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Sans-Trial-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Regular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Bold.otf");
+  font-weight: 700;
+}
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 32px */
+/* 48px */
+/* 72px */
+.cokkies {
+  display: flex;
+  width: 70vw;
+  flex-direction: column;
+  align-items: center;
+  font-family: "YsabeauInfant";
+}
+.cokkies p {
+  color: #FFF5F9;
+  font-weight: 100;
+  width: 90%;
+  text-align: center;
+}
+.cokkies p a {
+  font-weight: 500;
+}
+.cokkies .cookiesImg {
+  width: 70px;
+  height: 70px;
+}
+
+.buttonContainerCookies {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+}
+.buttonContainerCookies button {
+  cursor: pointer;
+  font-size: 12px;
+  padding: 10px 24px;
+  border-radius: 20px;
+  font-family: "YsabeauInfant";
+  font-weight: 700;
+}
+.buttonContainerCookies .buttonAccept {
+  margin-right: 16px;
+  background-color: #FFFFFF;
+  color: #131313;
+  border-color: transparent;
+}
+.buttonContainerCookies .buttonNot {
+  background-color: #131313;
+  color: white;
+  border-color: white;
+  border-style: solid;
+}
+
+@media (min-width: 1001px) {
+  .bottomPopUp {
+    position: fixed;
+    width: 66vw;
+    bottom: 0;
+    z-index: 101;
+    background-color: #131313;
+    padding: 18px 25px 15px;
+    z-index: 102;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "YsabeauInfant";
+  }
+  .bottomPopUp p {
+    font-size: 12px;
+    color: #FFF5F9;
+  }
+  .bottomPopUp p > a {
+    font-weight: 500;
+    text-decoration: underline;
+    margin: 0 2px;
+  }
+  .bottomPopUp .cookiesImg {
+    width: 36px;
+    height: 36px;
+  }
+  .buttonContainerCookies {
+    width: auto;
+  }
+  .buttonContainerCookies button {
+    font-family: "YsabeauInfant";
+    font-weight: 700;
+  }
+  .buttonContainerCookies .buttonAccept {
+    margin-right: 9px;
+  }
+}/*# sourceMappingURL=CookiesPopUp.module.css.map */

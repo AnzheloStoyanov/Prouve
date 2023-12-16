@@ -1,0 +1,12 @@
+.wrapper {
+  position: relative;
+}
+.wrapper > div {
+  position: absolute;
+  bottom: -5px;
+  color: black;
+  right: -5px;
+  background-color: rgba(255, 255, 255, 0.5882352941);
+  border-radius: 20px;
+  padding: 1px 7px;
+}/*# sourceMappingURL=BasketIcon.module.css.map */

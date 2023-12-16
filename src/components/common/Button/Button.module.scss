@@ -1,0 +1,69 @@
+@use '../../../assets/css/variables.scss' as v;
+
+%button-common {
+    font-size: 16px;
+    border: none;
+    font-family: v.$YsabeauInfant;
+    padding: 11px 0;
+    border-radius: 8px;
+    font-weight: bold;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:disabled {
+        background-color: lighten(black, $amount: 60%);
+        cursor: not-allowed;
+    }
+}
+
+.simpleButtonLight {
+    @extend %button-common;
+    background-color: v.$color-background-green;
+    color: white;
+}
+
+.simpleButtonDark {
+    @extend %button-common;
+    background-color: v.$color-dark-green;
+    color: white;
+}
+
+.simpleButtonLightBlue {
+    @extend %button-common;
+    background-color: v.$color-light-blue;
+    color: v.$color-dark-green;
+}
+
+.simpleButtonInactive {
+    @extend %button-common;
+    background-color: v.$color-dark-green;
+    color: v.$color-gray;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.outlinedButton {
+    width: 260px;
+    padding: 11px 0;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid v.$color-gray;
+    color: v.$color-dark-green;
+    font-family: v.$YsabeauInfant;
+    font-weight: bold;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.textButton {
+    @extend %button-common;
+    background-color: unset;
+    color: v.$color-dark-green;
+    font-weight: bold;
+}

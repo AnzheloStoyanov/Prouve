@@ -1,0 +1,176 @@
+@use '../../assets/css/variables.scss' as helpers;
+
+.mainBlogContainer{
+    display: flex;
+    flex-direction: column;
+    .blogBanner{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../../assets/images/blog-banner.png');
+        object-fit: cover;
+        height: 390px;
+        h1{
+            font-family: helpers.$YsabeauInfant;
+            font-size: 64px;
+            font-weight: bold;
+            text-align: center;
+            color: helpers.$plantation;
+        }
+        
+        .buttonContainer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+        }
+    }
+}
+
+.blogContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: helpers.$lavender-blush-color;
+    padding-bottom: 80px;
+
+}
+.cardsWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family:helpers.$YsabeauInfant;
+    color: helpers.$plantation;
+    padding: helpers.$globalPadding;
+    box-sizing: border-box;
+    gap: 10px;
+    margin-bottom: 60px;
+    .blogPost{
+       display: flex;
+       flex-direction: column;
+       max-width: 520px;
+    }
+    .imgBlogPost {  
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+        max-width: 520px;
+        max-height: 310px;
+      }
+      
+      .innerImgBlogPost {
+        transition: transform 0.3s; /* Apply transition to transform property */
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .innerImgBlogPost:hover {
+        transform: scale(1.1); /* Scale on hover */
+      }
+      .textContent{
+            padding: 0 5px;
+            .metaInfo{
+                display: flex;
+                justify-content: space-between;
+        
+              }
+              h3{
+                margin: 16px 0 12px;
+                font-size: 22px;
+                font-weight:900;
+              }
+              p{
+                font-size: 18px;
+                font-weight: normal;
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                max-height: 10.6em;
+                font-size: 16px;
+                line-height: 1.2;
+              }
+              
+              span{
+                color: helpers.$plantation;
+              }
+      }
+      
+}
+
+.productsHomeContainerTitle {
+    display: flex;
+    flex-direction: column;
+    width: 13%;
+    color: helpers.$oracle-color;
+
+
+    h1 {
+        font-family: helpers.$YsabeauInfant;
+        font-size: 100px;
+        margin: 0;
+    }
+
+    .titlePartTwo {
+        font-family: helpers.$YsabeauInfant;
+        color: helpers.$plantation;
+
+        text-align: right;
+        font-size: 75px;
+        font-weight: 200;
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+  
+    .productsHomeContainerTitle {
+        width: auto;
+    
+        h1 {
+            font-family: helpers.$YsabeauInfant;
+            font-size: 36px;
+            margin: 0;
+        }
+    
+        .titlePartTwo {
+            font-family: helpers.$YsabeauInfant;
+            text-align: right;
+            font-size: 30px;
+            font-weight: 200;
+        }
+    }
+    .cardsWrapper{
+        flex-direction: column;
+        align-items: center;
+        .blogPost{
+            width: 90%;
+         }
+    }
+    .mainBlogContainer{
+        .blogBanner{
+            height: 300px;
+            h1{
+                font-size: 40px;
+            }
+            
+            .buttonContainer {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 70px;
+            }
+        }
+
+    }
+}

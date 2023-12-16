@@ -1,0 +1,12 @@
+.mobilePositioning {
+  overflow-x: scroll;
+}
+.mobilePositioning .similarProductsCards {
+  width: 250%;
+}
+
+.similarProductsCards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}/*# sourceMappingURL=SimularProducts.module.css.map */

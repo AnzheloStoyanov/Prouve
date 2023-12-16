@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Sans-Trial-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Regular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Bold.otf");
+  font-weight: 700;
+}
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 32px */
+/* 48px */
+/* 72px */
+.formGroup, .formGroupError {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  font-family: "YsabeauInfant";
+}
+.formGroup input, .formGroupError input {
+  padding: 10px;
+  height: 24px;
+  width: auto;
+  border: none;
+  border-radius: 8px;
+  border: 1px solid #999999;
+  margin-top: 10px;
+}
+.formGroup label, .formGroupError label {
+  color: #131313;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.formGroupError > input {
+  border: 1px solid red;
+}
+
+.formGroupCheckbox {
+  display: flex;
+  font-family: "YsabeauInfant";
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 12px;
+}
+.formGroupCheckbox input[type=checkbox] {
+  accent-color: #131313;
+  margin-left: 0;
+  width: 14px;
+  height: 14px;
+}
+.formGroupCheckbox label {
+  color: #131313;
+  font-size: 16px;
+}/*# sourceMappingURL=InputField.module.css.map */

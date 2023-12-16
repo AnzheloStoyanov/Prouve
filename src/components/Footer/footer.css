@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Sans-Trial-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Regular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Bold.otf");
+  font-weight: 700;
+}
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 32px */
+/* 48px */
+/* 72px */
+footer {
+  background-color: #131313;
+  box-sizing: border-box;
+  padding: 39px 7.3%;
+}
+footer * {
+  color: #FFFFFF;
+  font-family: "YsabeauInfant";
+}
+footer .main-footer-container {
+  display: flex;
+}
+footer h3 {
+  font-size: 16px;
+  width: 100%;
+}
+footer span {
+  font-family: "YsabeauInfant";
+  font-size: 14px;
+  white-space: pre-line;
+  font-weight: 200;
+}
+footer .logo-container {
+  width: 16%;
+  margin-right: 17%;
+}
+footer .logo-container .logo {
+  width: 120px;
+}
+footer .logo-container p {
+  color: #FFFFFF;
+}
+footer .mobile-accordion {
+  display: none;
+}
+footer .content-footer {
+  margin-top: 78px;
+  display: flex;
+  width: 37%;
+}
+footer .content-footer .locations-container {
+  width: 46%;
+  margin-right: 23%;
+}
+footer .content-footer .locations-container .locations {
+  cursor: pointer;
+}
+footer .content-footer .locations-container span {
+  margin-bottom: 18px;
+}
+footer .content-footer .shop-container {
+  width: 30%;
+}
+footer .content-footer .shop-container div {
+  margin-bottom: 18px;
+}
+footer .bottom-line-footer a {
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 12px;
+}
+footer .bottom-line-footer .ring {
+  background-color: #FFFFFF;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+footer .bottom-line-footer > div {
+  display: flex;
+  justify-content: space-between;
+}
+footer .bottom-line-footer > div > div {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  width: 460px;
+}
+footer .contact-container {
+  margin-top: 78px;
+  margin-left: 14%;
+  width: 15%;
+}
+footer .contact-container div {
+  display: flex;
+  margin-bottom: 18px;
+}
+footer .contact-container a {
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 200;
+}
+@media (max-width: 1000px) {
+  footer {
+    padding: 19px 9.3% 42px;
+  }
+  footer .main-footer-container {
+    display: block;
+  }
+  footer .logo-container {
+    width: 78%;
+  }
+  footer .logo-container .logo {
+    width: 22%;
+  }
+  footer .logo-container p {
+    font-size: 12px;
+    font-weight: 200;
+  }
+  footer .contact-container {
+    display: none;
+  }
+  footer .content-footer {
+    display: none;
+  }
+  footer .mobile-accordion {
+    display: block;
+  }
+  footer .mobile-accordion .accordion-header {
+    border-color: #FFF5F9;
+    border-width: 0 0 1px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    height: 52px;
+  }
+  footer .mobile-accordion .accordion-header h3 {
+    font-size: 13px;
+  }
+  footer .mobile-accordion .accordion-content > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  footer .mobile-accordion .accordion-content a {
+    font-size: 13px;
+  }
+  footer .footer-copyright {
+    display: none;
+  }
+  footer .bottom-line-footer {
+    margin-top: 16px;
+  }
+  footer .bottom-line-footer a {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=footer.css.map */

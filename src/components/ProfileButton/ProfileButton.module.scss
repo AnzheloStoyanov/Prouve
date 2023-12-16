@@ -1,0 +1,11 @@
+.profileMenu {
+    position: fixed;
+
+    >div {
+        position: absolute;
+        width: 398px;
+        left: 30px;
+        top: 10px;
+        transform: translate(-100%);
+    }
+}

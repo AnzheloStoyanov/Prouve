@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Sans-Trial-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Regular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Bold.otf");
+  font-weight: 700;
+}
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 32px */
+/* 48px */
+/* 72px */
+.overlayMenu {
+  padding: 23px 0;
+  text-align: center;
+}
+.overlayMenu img {
+  width: 320px;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.overlayMenu .quantity {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlayMenu .quantity span {
+  padding-right: 15px;
+  font-size: 22px;
+  font-family: "YsabeauInfant";
+}
+.overlayMenu .price {
+  font-size: 30px;
+  color: #131313;
+  font-family: "YsabeauInfant";
+  font-weight: bold;
+  padding: 20px;
+}
+
+.wrapper {
+  width: 28%;
+  position: relative;
+}
+.wrapper .imageWrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  width: 100%;
+  padding-top: 100%;
+}
+.wrapper .imageWrapper .image img {
+  position: absolute;
+  top: 0;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.wrapper .imageWrapper:hover .image img {
+  transform: scale(1.2);
+  /* You can adjust the scale factor for desired zoom level */
+}
+.wrapper .imageWrapper:hover .overlay span {
+  opacity: 1;
+}
+.wrapper .imageWrapper:hover .overlay img {
+  opacity: 0.8;
+}
+.wrapper .imageWrapper .overlay {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  padding: 1% 5%;
+}
+.wrapper .imageWrapper .overlay > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .imageWrapper .overlay > div span {
+  position: absolute;
+  font-size: 24px;
+  font-family: "YsabeauInfant";
+  text-transform: uppercase;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.1s ease-in;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.wrapper .imageWrapper .overlay img,
+.wrapper .imageWrapper .overlay span {
+  opacity: 0;
+  transition: opacity 0.1s ease-in;
+  width: 100%;
+}
+.wrapper .textWrap {
+  margin-left: 5px;
+}
+.wrapper .textWrap .title {
+  margin-top: 33px;
+  color: #131313;
+  font-family: "YsabeauInfant";
+  font-size: 24px;
+  font-weight: bold;
+}
+.wrapper .textWrap .price {
+  margin-top: 16px;
+  margin-bottom: 68px;
+  font-family: "YsabeauInfant";
+  font-size: 22px;
+  color: gray;
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    width: 48%;
+  }
+  .wrapper .imageWrapper .image img {
+    border-radius: 20px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  .wrapper .imageWrapper .overlay {
+    display: none;
+  }
+}/*# sourceMappingURL=StoreItem.module.css.map */

@@ -1,0 +1,790 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Sans-Trial-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Regular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Bold.otf");
+  font-weight: 700;
+}
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 32px */
+/* 48px */
+/* 72px */
+.mainHomeContainer {
+  background-color: #FFF5F9;
+  padding: 0 3%;
+}
+.mainHomeContainer .mobileButton {
+  display: none;
+}
+.mainHomeContainer .headerMainMobileTitle {
+  display: none;
+}
+.mainHomeContainer .backgroundImageHomeHeader {
+  height: 70vh;
+  background-image: url(../../assets/images/hero-image.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 179px 4%;
+  background-position: 80%;
+}
+.mainHomeContainer .homeHeaderMainCard {
+  position: relative;
+  width: 40%;
+  min-width: 350px;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  border-radius: 20px;
+  color: #131313;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  padding: 0 3%;
+  padding-bottom: 116px;
+}
+.mainHomeContainer .homeHeaderMainCard .headerMainCardTitle {
+  font: normal normal bold 112px/126px "YsabeauInfant";
+  letter-spacing: 0px;
+  opacity: 1;
+}
+.mainHomeContainer .homeHeaderMainCard .headerMainCardTitle span {
+  font-family: "YsabeauInfant";
+  font-weight: 200;
+  font-style: normal;
+  font-size: 4.688rem;
+  line-height: 88px;
+  text-transform: lowercase;
+  opacity: 1;
+}
+.mainHomeContainer .homeHeaderMainCard .headerMainCardDescription {
+  width: 83%;
+  display: flex;
+  font-family: "YsabeauInfant";
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 27px;
+}
+.mainHomeContainer .relativePosCard {
+  position: relative;
+  margin-left: -20px;
+}
+.mainHomeContainer .relativePosCard .headerMainCardIcon {
+  position: absolute;
+  left: -60px;
+  top: -60px;
+  z-index: 1;
+}
+.mainHomeContainer .relativePosCard .secondaryCard {
+  padding-top: 30px;
+  position: absolute;
+  width: 448px;
+  height: 295px;
+  border: 1px solid #FFF5F9;
+  background-color: #FFF5F9;
+  border: 1px solid #FFF5F9;
+  border-radius: 12px;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #131313;
+  box-sizing: border-box;
+}
+.mainHomeContainer .relativePosCard .secondaryCard .secondaryCardTitle {
+  display: flex;
+  width: 60%;
+  font: normal bold 64px/64px "YsabeauInfant";
+  text-align: center;
+  letter-spacing: 0px;
+}
+.mainHomeContainer .relativePosCard .secondaryCard p {
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: "YsabeauInfant";
+  text-align: center;
+}
+.mainHomeContainer .relativePosCard .secondaryCard .srcondaryButton {
+  /* Font properties */
+  font-family: "YsabeauInfant";
+  font-weight: bold;
+  font-size: 41px;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.mainHomeContainer .productsHomeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 80px;
+}
+.mainHomeContainer .productsHomeContainer .productsCardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.buttonContainer {
+  height: 50px;
+}
+
+.productsHomeContainerTitle {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  color: #131313;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+.productsHomeContainerTitle h1 {
+  font-family: "YsabeauInfant";
+  font-size: 50px;
+  margin: 0;
+}
+.productsHomeContainerTitle .titlePartTwo {
+  font-family: "YsabeauInfant";
+  text-align: right;
+  font-size: 75px;
+  font-weight: 200;
+}
+
+.backgroundImageLetMeetUs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+.backgroundImageLetMeetUs .productsHomeContainerTitle {
+  width: 530px;
+}
+.backgroundImageLetMeetUs .meetUsContentContainer {
+  width: 56%;
+  padding: 30px;
+  color: #131313;
+}
+.backgroundImageLetMeetUs .meetUsContentContainer svg {
+  width: 35px;
+  height: 35px;
+}
+.backgroundImageLetMeetUs .meetUsContentContainer .secondQuote {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.backgroundImageLetMeetUs .meetUsContentContainer .firstQuote {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+.backgroundImageLetMeetUs .meetUsContentContainer .signment {
+  display: flex;
+  justify-content: flex-end;
+}
+.backgroundImageLetMeetUs .meetUsContentContainer .signment > div {
+  display: flex;
+  flex-direction: column;
+}
+.backgroundImageLetMeetUs .meetUsContentContainer .signment > div h4 {
+  margin: 0;
+}
+.backgroundImageLetMeetUs .meetUsContentContainer .signment > div :first-child {
+  font-size: 32px;
+  font-family: "YsabeauInfant";
+  font-weight: 900;
+}
+.backgroundImageLetMeetUs .meetUsContentContainer .signment > div :last-child {
+  font-size: 18px;
+  font-family: "YsabeauInfant";
+  font-weight: 200;
+}
+.backgroundImageLetMeetUs .meetUsContentLetter {
+  font-family: "YsabeauInfant";
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0 35px;
+}
+.backgroundImageLetMeetUs .meetUsContentLetter p {
+  margin: 0px;
+  font-weight: 200;
+}
+
+.backgroundImageFirstClass {
+  background-image: url(../../assets/images/bg-първо-качество.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+}
+.backgroundImageFirstClass .productsHomeContainerTitle {
+  width: 32%;
+  margin: 58px 0 20px;
+}
+.backgroundImageFirstClass .productsHomeContainerTitle p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "YsabeauInfant";
+}
+.backgroundImageFirstClass .missingContent {
+  width: 61%;
+  font-family: "YsabeauInfant";
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.blogContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF5F9;
+  padding-bottom: 80px;
+}
+.blogContainer .productsHomeContainerTitle {
+  width: 13%;
+  margin: 58px 0 20px;
+}
+.blogContainer .cardsContainer {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  /* 60% - 20% - 20% */
+  width: 100%;
+  gap: 20px;
+  padding: 10px;
+  /* Add padding to separate the items */
+  box-sizing: border-box;
+}
+
+.choseUsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding-bottom: 58px;
+}
+.choseUsContainer .productsHomeContainerTitle {
+  width: 30%;
+  margin: 58px 0 20px;
+}
+.choseUsContainer .choseUsContainerIcons {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+.choseUsContainer .choseUsContainerIcons > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  color: #131313;
+  font-family: "YsabeauInfant";
+  font-size: 18px;
+}
+.choseUsContainer .choseUsContainerIcons > div span {
+  font-weight: 800;
+}
+.choseUsContainer .choseUsContainerIcons > div p {
+  text-align: center;
+  font-weight: 500;
+  padding: 0px 45px;
+}
+
+.contactUsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF5F9;
+  padding-bottom: 80px;
+}
+.contactUsContainer .productsHomeContainerTitle {
+  width: 20%;
+  margin-bottom: 80px;
+}
+.contactUsContainer .mainContactUsContainer {
+  display: grid;
+  grid-template-columns: 1.1fr 0.8fr 1.1fr;
+  /* Each child div takes 1 fraction of the available width */
+  width: 100%;
+  background-color: #EA9CB7;
+  color: #131313;
+  font-family: "YsabeauInfant";
+}
+.contactUsContainer .mainContactUsContainer h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+.contactUsContainer .mainContactUsContainer .contactForm {
+  padding: 0 17%;
+}
+.contactUsContainer .mainContactUsContainer .contactForm form {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.contactUsContainer .mainContactUsContainer .contactForm form .acceptPolicy {
+  display: flex;
+  align-items: flex-start;
+}
+.contactUsContainer .mainContactUsContainer .contactForm form .buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactUsContainer .mainContactUsContainer .contactForm form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.contactUsContainer .mainContactUsContainer .contactForm form input[type=text],
+.contactUsContainer .mainContactUsContainer .contactForm form input[type=email],
+.contactUsContainer .mainContactUsContainer .contactForm form textarea {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.contactUsContainer .mainContactUsContainer .contactForm form input[type=text]::-moz-placeholder, .contactUsContainer .mainContactUsContainer .contactForm form input[type=email]::-moz-placeholder, .contactUsContainer .mainContactUsContainer .contactForm form textarea::-moz-placeholder {
+  font-family: "YsabeauInfant";
+}
+.contactUsContainer .mainContactUsContainer .contactForm form input[type=text]::placeholder,
+.contactUsContainer .mainContactUsContainer .contactForm form input[type=email]::placeholder,
+.contactUsContainer .mainContactUsContainer .contactForm form textarea::placeholder {
+  font-family: "YsabeauInfant";
+}
+.contactUsContainer .mainContactUsContainer .contactForm form textarea {
+  resize: vertical;
+  min-height: 230px;
+}
+.contactUsContainer .mainContactUsContainer .contactForm form input[type=checkbox] {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.contactUsContainer .mainContactUsContainer .contactForm form a {
+  color: #131313;
+  font-weight: 800;
+}
+.contactUsContainer .mainContactUsContainer .contactForm form input[type=submit] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+.contactUsContainer .mainContactUsContainer .contactForm form input[type=submit]:hover {
+  background-color: #0056b3;
+}
+.contactUsContainer .mainContactUsContainer .middleImage {
+  background-image: url(../../assets/images/contacts-image.png);
+  background-size: cover;
+}
+.contactUsContainer .mainContactUsContainer .contactsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactUsContainer .mainContactUsContainer .contactsContainer .contactsContainerInner > div {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+.contactUsContainer .mainContactUsContainer .contactsContainer .contactsContainerInner .locationContainerCol {
+  flex-direction: row;
+}
+.contactUsContainer .mainContactUsContainer .contactsContainer .locatioins > img {
+  margin-right: 15px;
+}
+
+.locationContainerM {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.locationContainerM div .phone {
+  width: 45px;
+  height: 45px;
+}
+.locationContainerM div .mail {
+  width: 29px;
+  height: 21px;
+}
+.locationContainerM > div {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+  .relativePosCard {
+    display: none;
+  }
+  .mainHomeContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    align-items: center;
+  }
+  .mainHomeContainer .mobileButton {
+    display: none;
+  }
+  .mainHomeContainer .homeHeaderMainCard {
+    display: none;
+  }
+  .mainHomeContainer .headerMainMobileTitle {
+    display: block;
+    font: normal normal bold 50px/63px "YsabeauInfant";
+    letter-spacing: 0px;
+    opacity: 1;
+    white-space: break-spaces;
+    margin-top: 50px;
+  }
+  .mainHomeContainer .headerMainMobileTitle span {
+    font-family: "YsabeauInfant";
+    font-weight: 200;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 88px;
+    text-transform: lowercase;
+    opacity: 1;
+  }
+  .mainHomeContainer .backgroundImageHomeHeader {
+    height: 321px;
+    border-radius: 25px;
+    padding: 0;
+    width: 100%;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: center;
+    margin-bottom: 50px;
+  }
+  .mainHomeContainer .productsHomeContainer .productsCardsContainer {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .mainHomeContainer .productsHomeContainer .productsHomeContainerTitle {
+    width: auto;
+    color: #131313;
+  }
+  .mainHomeContainer .productsHomeContainer .productsHomeContainerTitle h1 {
+    font-family: "YsabeauInfant";
+    font-size: 36px;
+    margin: 0;
+  }
+  .mainHomeContainer .productsHomeContainer .productsHomeContainerTitle .titlePartTwo {
+    font-family: "YsabeauInfant";
+    text-align: right;
+    font-size: 30px;
+    font-weight: 200;
+    margin-left: 50px;
+  }
+  .backgroundImageLetMeetUs {
+    background-position: 80%;
+  }
+  .backgroundImageLetMeetUs .productsHomeContainerTitle {
+    width: 90%;
+    display: flex;
+    align-items: center;
+  }
+  .backgroundImageLetMeetUs .productsHomeContainerTitle h1 {
+    font-size: 30px;
+  }
+  .backgroundImageLetMeetUs .productsHomeContainerTitle .titlePartTwo {
+    font-size: 30px;
+  }
+  .backgroundImageLetMeetUs .meetUsContentContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 100px 0;
+  }
+  .backgroundImageLetMeetUs .meetUsContentContainer svg {
+    width: 18px;
+    height: 18px;
+  }
+  .backgroundImageLetMeetUs .meetUsContentContainer .meetUsContentLetter {
+    padding: 0 18px;
+  }
+  .backgroundImageLetMeetUs .meetUsContentContainer .meetUsContentLetter p {
+    margin: 0px;
+    font-weight: 200;
+  }
+  .backgroundImageLetMeetUs .meetUsContentContainer .signment {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .backgroundImageLetMeetUs .meetUsContentContainer .signment > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .backgroundImageLetMeetUs .meetUsContentContainer .signment :first-child {
+    font-size: 18px;
+  }
+  .backgroundImageLetMeetUs .meetUsContentContainer .signment h4 {
+    font-size: 16px;
+  }
+  .backgroundImageFirstClass > p {
+    font-family: "YsabeauInfant";
+    font-weight: 600;
+    color: #131313;
+  }
+  .backgroundImageFirstClass .productsHomeContainerTitle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .backgroundImageFirstClass .productsHomeContainerTitle h1 {
+    font-family: "YsabeauInfant";
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+  }
+  .backgroundImageFirstClass .productsHomeContainerTitle .titlePartTwo {
+    font-family: "YsabeauInfant";
+    text-align: right;
+    font-size: 30px;
+    font-weight: 200;
+    margin-left: 50px;
+  }
+  .backgroundImageFirstClass .missingContent {
+    width: 100%;
+    max-width: 700px;
+    font-family: "YsabeauInfant";
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .choseUsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 80px;
+  }
+  .choseUsContainer .productsHomeContainerTitle {
+    width: auto;
+  }
+  .choseUsContainer .productsHomeContainerTitle h1 {
+    font-family: "YsabeauInfant";
+    font-size: 36px;
+    margin: 0;
+  }
+  .choseUsContainer .productsHomeContainerTitle .titlePartTwo {
+    font-family: "YsabeauInfant";
+    text-align: right;
+    font-size: 30px;
+    font-weight: 200;
+  }
+  .choseUsContainer .choseUsContainerIcons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .choseUsContainer .choseUsContainerIcons > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    color: #131313;
+    font-family: "YsabeauInfant";
+    font-size: 18px;
+  }
+  .choseUsContainer .choseUsContainerIcons > div span {
+    font-weight: 800;
+  }
+  .choseUsContainer .choseUsContainerIcons > div p {
+    text-align: center;
+    font-weight: 500;
+    padding: 0px 45px;
+  }
+  .blogContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF5F9;
+    padding-bottom: 80px;
+  }
+  .blogContainer .productsHomeContainerTitle {
+    width: auto;
+  }
+  .blogContainer .productsHomeContainerTitle h1 {
+    font-family: "YsabeauInfant";
+    font-size: 36px;
+    margin: 0;
+  }
+  .blogContainer .productsHomeContainerTitle .titlePartTwo {
+    font-family: "YsabeauInfant";
+    text-align: right;
+    font-size: 30px;
+    font-weight: 200;
+  }
+  .blogContainer .cardsContainerMobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .blogContainer .cardsContainerMobile .secondElemenetCardsContainer {
+    display: flex;
+    gap: 2%;
+  }
+  .blogContainer .cardsContainerMobile > * {
+    padding: 10px;
+    /* Add padding to separate the items */
+    box-sizing: border-box;
+  }
+  .contactUsContainer {
+    background-color: rgba(234, 156, 183, 0.2);
+  }
+  .contactUsContainer .productsHomeContainerTitle {
+    width: auto;
+  }
+  .contactUsContainer .productsHomeContainerTitle h1 {
+    font-family: "YsabeauInfant";
+    font-size: 36px;
+    margin: 0;
+  }
+  .contactUsContainer .productsHomeContainerTitle .titlePartTwo {
+    font-family: "YsabeauInfant";
+    text-align: right;
+    font-size: 30px;
+    font-weight: 200;
+  }
+  .contactUsContainer .mainContactUsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactUsContainer .mainContactUsContainer .middleImage {
+    height: 15vh;
+  }
+  .contactUsContainer .mainContactUsContainer .contactForm {
+    padding: 0 8% 8%;
+  }
+  .locationContainerM {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .locationContainerM img {
+    width: 24px;
+  }
+  .contactsContainerInner > div {
+    flex-direction: column;
+  }
+  .locationContainerM {
+    flex-direction: column;
+  }
+  .locationContainerM > div {
+    display: flex;
+  }
+  .locationContainerM > div > div {
+    display: flex;
+  }
+  .locationContainerM img {
+    width: 30px;
+    height: 35px;
+  }
+  .locationContainerM .locatioins img {
+    width: 10px;
+    height: 14px;
+  }
+  .locationContainerM .locationContainerTitle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .locationContainerM .locationContainerTitle > img {
+    width: 12px;
+    height: 20px;
+  }
+}
+.contactsContainerInner {
+  background-color: rgba(234, 156, 183, 0.2) !important;
+  padding: 25px;
+}
+
+.locationContainerCol {
+  flex-direction: column;
+}/*# sourceMappingURL=Home.module.css.map */

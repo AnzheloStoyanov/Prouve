@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Sans-Trial-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Regular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Bold.otf");
+  font-weight: 700;
+}
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 32px */
+/* 48px */
+/* 72px */
+.paymentsWrapper {
+  width: auto;
+  background-color: white;
+  padding: 40px 47px;
+  border-radius: 24px;
+  max-width: 1040px;
+}
+@media screen and (max-width: 1000px) {
+  .paymentsWrapper {
+    padding: 0 13px 20px 13px;
+  }
+  .paymentsWrapper table,
+  .paymentsWrapper .header,
+  .paymentsWrapper div:first-child {
+    display: none;
+  }
+}
+
+.header,
+.totalSum {
+  font-weight: bold;
+  color: #131313;
+}
+
+.header {
+  font-family: "YsabeauInfant";
+  font-size: 40px;
+}
+
+.totalSum {
+  font-size: 18px;
+  font-family: "YsabeauInfant";
+  margin-top: 14px;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.paymentsList {
+  margin-left: 0;
+  padding: 0;
+  list-style: none;
+}
+.paymentsList > li {
+  display: flex;
+  justify-content: space-around;
+  height: 72px;
+  border-bottom: 0.1px solid #131313;
+  align-items: center;
+  font-family: "YsabeauInfant";
+  font-weight: bold;
+  color: #131313;
+}
+.paymentsList > li > div {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: center;
+  background-color: rgba(153, 153, 153, 0.05);
+  height: 100%;
+  padding-left: 12px;
+}
+.paymentsList > li > div > span:nth-child(2) {
+  font-weight: normal;
+}/*# sourceMappingURL=Payments.module.css.map */

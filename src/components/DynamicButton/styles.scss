@@ -1,0 +1,20 @@
+@use '../../assets/css/variables.scss' as helpers;
+
+.dynamic-button {
+  padding: 12px 41px;
+  font-family: helpers.$YsabeauInfant;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #FFF5F9;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  background-color: helpers.$oracle-color;
+  cursor: pointer;
+  outline: none;
+  transition: font-size 0.3s;
+  &:hover {
+      font-size: 18px;
+  }
+}

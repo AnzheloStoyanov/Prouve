@@ -1,0 +1,47 @@
+@use '../../../assets/css/variables.scss' as v;
+
+%divider {
+    width: 100%;
+    color: v.$color-gray;
+    margin: 40px 0;
+}
+
+.divider {
+    @extend %divider;
+
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    font-family: v.$YsabeauInfant;
+}
+
+.dividerNoText {
+    @extend %divider;
+    display: flex;
+    align-items: center;
+}
+
+.divider::before,
+.divider::after {
+    flex: 1;
+    content: '';
+    padding: 0.5px;
+    background-color: v.$color-gray;
+    color: v.$color-gray;
+}
+
+.dividerNoText::before,
+.dividerNoText::after {
+    flex: 1;
+    content: '';
+    padding: 0.5px;
+    background-color: v.$color-gray;
+    color: v.$color-gray;
+}
+
+.divider::before {
+    margin: 7px 20px 7px 0px;
+}
+.divider::after {
+    margin: 7px 0px 7px 20px;
+}

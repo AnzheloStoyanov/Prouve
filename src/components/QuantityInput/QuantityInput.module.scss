@@ -1,0 +1,73 @@
+@use '../../assets/css/variables.scss' as v;
+
+// .wrapper {
+// div {
+//     width: 10px;
+//     height: 10px;
+// }
+
+.sub .add {}
+
+.QuantityInput {
+    font-weight: 400;
+    color: v.$color-dark-green;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.QuantityInput input {
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    &[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    font-size: 1rem;
+    font-weight: 400;
+    color: inherit;
+    background: transparent;
+    border: 1px solid v.$color-light-green;
+    border-radius: 6px;
+    margin: 0 4px;
+    padding: 10px 2px;
+    width: 34px;
+    text-align: center;
+}
+
+.QuantityInput input:focus {
+    box-shadow: 0 0 0 1px v.$color-dark-green;
+    border: 1px solid v.$color-light-green;
+}
+
+.QuantityInput input:focus-visible {
+    outline: 0;
+}
+
+.QuantityInput .btn {
+    user-select: none;
+    font-size: 1rem;
+    box-sizing: border-box;
+    line-height: 1.5;
+    border: 0;
+    border-radius: 6px;
+
+    width: 22px;
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    color: v.$color-dark-green;
+    background-color: v.$color-light-green;
+}
+
+.QuantityInput .btn:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,176 @@
+@use '../../assets/css/variables.scss' as v;
+
+.navStyle {
+    user-select: none;
+    width: calc(100% - 200px);
+    margin-left: auto;
+
+    nav {
+        padding-bottom: 20px;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                padding-bottom: 5px;
+                margin-left: auto;
+                text-transform: uppercase;
+                color: v.$color-dark-green;
+
+                font-family: v.$YsabeauInfant;
+                font-weight: 800;
+                font-size: 18px;
+
+                display: inline;
+
+                a:hover {
+                    color: v.$color-dark-pink;
+                }
+
+                a>img {
+                    color: inherit;
+                }
+                .cardIcon:hover{
+                   fill: v.$color-dark-pink;
+                }
+            }
+
+            .submenu {
+                position: relative;
+                z-index: 1;
+
+                ul {
+                    display: none;
+                    position: absolute;
+                    top: 35px;
+                    left: 0px;
+                    background-color: rgba(v.$color-dark-pink, .8);
+                    border-radius: 15px;
+                    animation: all 7s ease;
+
+                    li {
+                        min-width: 180px;
+                        margin: 0;
+
+                        a {
+                            padding: 15px 30px;
+                            width: 100%;
+                        }
+
+                        font-weight: 400;
+                        text-transform: none;
+                        display: flex;
+                        font-size: 18px;
+                        color: v.$color-light-pink;
+
+                        a:hover {
+                            color: inherit;
+                            background-color: rgba(0, 0, 0, 0.096);
+                        }
+                    }
+                }
+
+                &:hover {
+                    ul {
+                        display: grid;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .navStyle {
+        width: unset;
+        
+        nav {
+            ul {
+                display: grid;
+
+                li {
+                    padding-top: 10px;
+                    margin-left: 50px;
+                }
+
+                .submenu {
+                    position: unset;
+
+                    ul {
+                        position: unset;
+                        background-color: inherit;
+                        //  should add display animation but I think that may be with the ui kit
+
+                        li {
+                            a {
+                                padding: 5px 30px;
+                            }
+
+                            margin: none;
+                            font-weight: 400;
+                            text-transform: none;
+                            display: flex;
+                            font-size: 24px;
+                            color: inherit;
+                        }
+                    }
+
+                    &.submenuOpen:hover {
+                        ul {
+                            display: block;
+                        }
+                    }
+
+                    &.submenuClosed:hover {
+                        ul {
+                            display: none;
+                        }
+                    }
+
+                    &.submenuOpen {
+                        ul {
+                            display: block;
+                        }
+
+                        >a::after {
+                            content: "▴";
+                        }
+                    }
+
+                    &.submenuClosed {
+                        ul {
+                            display: none;
+                        }
+
+                        >a::after {
+                            content: "▾";
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.languageSwitcher {
+    cursor: pointer;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .languageSwitcher span {
+    padding: 0 5px;
+
+      &:hover {
+          color: v.$color-dark-pink;;
+      }
+  }
+  
+  .activeLanguage {
+    font-weight: normal;
+  }

@@ -1,0 +1,101 @@
+@use '../../assets/css/variables.scss' as v;
+
+.wrapper {
+    background: white;
+    border-radius: 10px;
+
+    padding: 42px;
+    font-family: v.$YsabeauInfant;
+    color: v.$color-dark-green;
+    display: flex;
+
+    img {
+        width: 276px;
+        height: 276px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 20px;
+        width: 100%;
+
+        .quantity {
+            display: flex;
+            font-size: 20px;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .spaceBetween {
+            font-size: 23px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 20px;
+            object-fit: unset;
+            border-radius: unset;
+            height: 20px;
+        }
+
+        span {
+            margin: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            pointer-events: none;
+        }
+
+        border: none;
+        background: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .wrapper {
+        padding: 10px;
+
+        .flex {
+            display: flex;
+
+            span {
+                font-size: 23px;
+                font-weight: bold;
+                display: flex;
+                justify-content: space-between;
+                padding: 5px 15px;
+            }
+        }
+
+        .spaceBetween {
+            padding: 20px 0px;
+
+            span {
+                font-size: 30px;
+            }
+        }
+
+        >div {
+            padding-left: 0px;
+        }
+
+        img {
+            width: 90px;
+            height: 90px;
+        }
+
+        button {
+            display: block;
+        }
+    }
+}

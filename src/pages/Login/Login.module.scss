@@ -1,0 +1,84 @@
+@use '../../assets/css/variables.scss' as v;
+
+.greeting {
+    font-family: v.$YsabeauInfant;
+    font-size: 40px;
+    color: v.$color-dark-green;
+    height: 53px;
+    padding: 5px;
+}
+
+.info {
+    font-family: v.$YsabeauInfant;
+    font-size: 16px;
+    color: v.$color-gray;
+    height: 44px;
+    width: 274px;
+    text-align: center;
+}
+
+.buttonContainer {
+    margin-top: 25px;
+    background-color: v.$color-dark-green;
+    width: 260px;
+    border-radius: 50px;
+}
+
+.divider {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: v.$color-gray;
+    margin-top: 40px;
+    font-family: v.$YsabeauInfant;
+}
+
+.divider::before,
+.divider::after {
+    flex: 1;
+    content: '';
+    padding: 0.5px;
+    background-color: v.$color-gray;
+    color: v.$color-gray;
+}
+
+.divider::before {
+    margin: 7px 20px 7px 0px;
+}
+.divider::after {
+    margin: 7px 0px 7px 20px;
+}
+
+.switchSection {
+    font-family: v.$YsabeauInfant;
+    color: v.$color-dark-green;
+    font-size: 16px;
+    margin-top: 24px;
+
+    a {
+        font-weight: bold;
+    }
+}
+
+.textButton::hover {
+    cursor: pointer;
+}
+
+%content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 64px;
+  }
+
+.contentWrapperSmall {
+    @extend %content-wrapper;
+    height: 876px;
+}
+
+.contentWrapperLarge {
+    @extend %content-wrapper;
+    height: 983px;
+}

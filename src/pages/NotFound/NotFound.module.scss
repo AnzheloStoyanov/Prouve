@@ -1,0 +1,52 @@
+@use '../../assets/css/variables.scss' as helpers;
+
+.background {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../../assets/images/404-bg.png');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentWrapper {
+  color: helpers.$color-background-green;
+  width: 640px;
+  text-align: center;
+  margin-top: 350px;
+}
+
+.headText {
+  font-family: helpers.$YsabeauInfant;
+  font-size: helpers.$font-size-3xl;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+.subHeadText {
+  font-family: helpers.$YsabeauInfant;
+  font-size: helpers.$font-size-xl;
+  font-weight: 500;
+  margin-bottom: 36px;
+}
+
+.buttonContainer {
+  height: 50px;
+}
+
+@media (max-width: 1000px) {
+  .background {
+    background-image: url('../../assets/images/404-mobile-bg.png');
+    background-size: initial;
+    background-repeat: no-repeat;
+  }
+
+  .headText {
+    font-size: helpers.$font-size-2xl;
+  }
+
+  .subHeadText {
+    font-size: helpers.$font-size-lg;
+  }
+}

@@ -1,0 +1,105 @@
+@use '../../assets/css/variables.scss' as helpers;
+
+.cokkies {
+    display: flex;
+    width: 70vw;
+    flex-direction: column;
+    align-items: center;
+    font-family: helpers.$YsabeauInfant;
+
+    p {
+        color: #FFF5F9;
+        font-weight: 100;
+        width: 90%;
+        text-align: center;
+
+        a {
+            font-weight: 500;
+        }
+    }
+    .cookiesImg {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+
+
+.buttonContainerCookies {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+
+    button {
+        cursor: pointer;
+        font-size: 12px;
+        padding: 10px 24px;
+        border-radius: 20px;
+        font-family: helpers.$YsabeauInfant;
+        font-weight: 700;
+    }
+
+    .buttonAccept {
+        margin-right: 16px;
+        background-color: #FFFFFF;
+        color: helpers.$oracle-color;
+        border-color: transparent;
+    }
+
+    .buttonNot {
+        background-color: helpers.$oracle-color;
+        color: white;
+        border-color: white;
+        border-style: solid;
+    }
+}
+
+@media (min-width: 1001px) {
+    .bottomPopUp {
+        position: fixed;
+        width: 66vw;
+        bottom: 0;
+        z-index: 101;
+        background-color: helpers.$oracle-color;
+        padding: 18px 25px 15px;
+        z-index: 102;
+        left: 50%;
+        transform: translate(-50%, 0);
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: helpers.$YsabeauInfant;
+
+        p {
+            font-size: 12px;
+            color: #FFF5F9;
+            >a {
+                font-weight: 500;
+                text-decoration: underline;
+                margin: 0 2px;
+            }
+        }
+
+        .cookiesImg {
+            width: 36px;
+            height: 36px;
+        }
+    }
+
+    
+
+    .buttonContainerCookies {
+        width: auto;
+
+        button {
+            font-family: helpers.$YsabeauInfant;
+            font-weight: 700;
+
+        }
+
+        .buttonAccept {
+            margin-right: 9px;
+        }
+    }
+}

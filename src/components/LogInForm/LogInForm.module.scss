@@ -1,0 +1,21 @@
+@use '../../assets/css/variables.scss' as v;
+
+.logInForm {
+    margin-top: 0 !important;
+    width: 100%;
+
+    div:first-child{
+        margin-top: 0 !important;
+    }
+}
+
+.forgotPassword {
+    color: v.$color-dark-green;
+    font-family: v.$YsabeauInfant;
+    font-size: 16px;
+    font-weight: bold;
+    width: 175px;
+    text-align: start;
+    margin-top: 12px;
+    align-self: flex-start;
+  }

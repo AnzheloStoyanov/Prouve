@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Sans-Trial-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Regular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Bold.otf");
+  font-weight: 700;
+}
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 32px */
+/* 48px */
+/* 72px */
+.loginSmall {
+  width: 1088px;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+  margin-top: 77px;
+  margin-bottom: 149px;
+}
+@media only screen and (max-width: 1000px) {
+  .loginSmall {
+    width: 317px;
+    box-sizing: border-box;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .loginSmall .pictureSection {
+    display: none;
+  }
+  .loginSmall .authSection {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 100%;
+    padding: 0;
+    margin: auto;
+    align-items: center;
+  }
+}
+
+.loginSmall {
+  background-color: white;
+  height: auto;
+}
+
+.authSection {
+  display: flex;
+  flex-direction: column;
+  width: 518px;
+  height: 100%;
+  padding-bottom: 62px;
+  padding: 0 86px;
+  align-items: center;
+}
+
+.pictureSection {
+  height: auto;
+  min-height: 100%;
+  max-height: 100%;
+  width: 398px !important;
+  background-repeat: no-repeat;
+  -o-object-fit: "contain";
+     object-fit: "contain";
+  background-size: cover;
+  background-image: url("../../assets/images/sign-up-page-img.png");
+}
+
+.greeting {
+  font-family: "YsabeauInfant";
+  font-size: 40px;
+  color: #131313;
+  height: 53px;
+  padding: 5px;
+}
+
+.info {
+  font-family: "YsabeauInfant";
+  font-size: 16px;
+  color: #999999;
+  height: 44px;
+  width: 274px;
+  text-align: center;
+}
+
+.buttonContainer {
+  margin-top: 25px;
+  background-color: #131313;
+  width: 260px;
+  border-radius: 50px;
+}
+
+.divider {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #999999;
+  margin-top: 40px;
+  font-family: "YsabeauInfant";
+}
+
+.divider::before,
+.divider::after {
+  flex: 1;
+  content: "";
+  padding: 0.5px;
+  background-color: #999999;
+  color: #999999;
+}
+
+.divider::before {
+  margin: 7px 20px 7px 0px;
+}
+
+.divider::after {
+  margin: 7px 0px 7px 20px;
+}
+
+.switchSection {
+  font-family: "YsabeauInfant";
+  color: #131313;
+  font-size: 16px;
+  margin-top: 24px;
+}
+.switchSection a {
+  font-weight: bold;
+}/*# sourceMappingURL=AuthContainer.module.css.map */

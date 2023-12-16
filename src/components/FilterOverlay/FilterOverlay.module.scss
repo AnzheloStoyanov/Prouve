@@ -1,0 +1,79 @@
+@use '../../assets/css/variables.scss' as v;
+
+.navStyle {
+    list-style: none;
+    color: v.$color-dark-green;
+
+    ul {
+        user-select: none;
+        padding: 0;
+        justify-content: space-between;
+
+        display: grid;
+
+
+        li {
+            padding-top: 10px;
+            font-family: v.$YsabeauInfant;
+            font-weight: 800;
+            font-size: 24px;
+
+            display: inline;
+        }
+    }
+
+    .submenu {
+        position: unset;
+
+        ul {
+            display: none;
+            position: unset;
+            background-color: inherit;
+
+            li {
+                a {
+                    padding: 5px 30px;
+                }
+
+                margin: none;
+                font-weight: 400;
+                text-transform: none;
+                display: flex;
+                font-size: 24px;
+                color: inherit;
+            }
+        }
+
+        &.submenuOpen:hover {
+            ul {
+                display: block;
+            }
+        }
+
+        &.submenuClosed:hover {
+            ul {
+                display: none;
+            }
+        }
+
+        &.submenuOpen {
+            ul {
+                display: block;
+            }
+
+            >a::after {
+                content: "▴";
+            }
+        }
+
+        &.submenuClosed {
+            ul {
+                display: none;
+            }
+
+            >a::after {
+                content: "▾";
+            }
+        }
+    }
+}

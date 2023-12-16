@@ -1,0 +1,103 @@
+{
+  "navbar": {
+    "home": "Home",
+    "blog": "Dog Blog",
+    "shop": "Shop",
+    "contacts": "Contact",
+    "admin": "Admin",
+    "basket": "Basket",
+    "shopCategoryes":"en_name"
+
+  },
+  "registration": {
+    "passwordError" : "Password must be at least 8 symbols and contain an upper case, lower case, a special character and a number",
+    "passwordsMismatch" : "Passwords do not match"
+  },
+  "locale": {
+    "monthNames": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "dayNames" : [
+      "M",
+      "Tu",
+      "W",
+      "Th",
+      "F",
+      "Sa",
+      "Su"
+    ]
+  },
+  "homePage":{
+    "header1":"The houses with which every day is",
+    "header2":"warm",
+    "headerDescriptioin": "Every little house is created with love and attention to detail, reminding you that your best friend can be even happier and more playful.",
+    "headerToTheShop":"To the store",
+    "headerSmallCardTitle": "Winter mood",
+    "headerSmallCardSubTitle": "A cozy dream house",
+    "headerSmallCardCallToAction": "ORDER NOW",
+    "meetUsContentLetterTitle":"Hello, I am Bobi, and I present to you",
+    "meetUsContentLetterDescription1":"a world of unique and personalized little houses for our four-legged friends. For those who consider dogs not just pets, but a part of the family, they deserve something more.",
+    "meetUsContentLetterDescription2":"At the beginning, everything was just a hobby. I loved creating things with my hands, and I loved dogs. One day, I wondered:",
+    "meetUsContentLetterDescription2ques":"\"Why not combine both passions and create something unique for our furry friends?\"",
+    "meetUsEndOFFirstPart":"So began my adventure.",
+    "meetUsContentLetterSecondPart":"I used high-quality materials such as sustainable wood and safe paints to ensure that each doghouse is not only healthy but also durable. In the process of my work, I encountered numerous dogs that inspired me for unique designs and functionalities.",
+    "meetUsContentLetterThirdPart":"Thus, we created an entire world of comfort and warmth for our dogs, where each dog is special and deserves the very best.",
+    "meetUsContentLetterThirdPartEnd":"You're welcome to see for yourself firsthand.",
+    "founderContentLetter":"Borislav P.",
+    "descOfOwner":" Founder of Woof & Roof",
+    "topProducts" : "Top top products from ",
+    "ourSelection":"our selection",
+    "moreSurprises":"more surprises",
+    "lets":"Let's",
+    "meet":"meet",
+    "whyChose":"Why choose",
+    "us":"us",
+    "leva":"lv",
+    "delete":"Delete",
+    "productsHomeFisrtClass":"First-class ",
+    "quality":"quality",
+    "housesWithLove":"Cozy little houses, made with a lot of love!",
+    "realizedDeliveries":"Realized deliveries",
+    "satisfiedCustomers":"Satisfied customers",
+    "qualityMaterials":"Quality materials",
+    "qualityMaterialsDescription": "Using high-quality materials for crafting doghouses ensures their durability and longevity. For us, this is of paramount importance",
+    "healthyMaterials":"Healthy materials",
+    "healthyMaterialsDesc":"The health of the dogs is emphasized through the use of safe materials that pose no risk of allergies or other health issues.",
+    "handMade":"Handcrafted with love",
+    "handMadeDesc":"Handcrafting allows for the use of more precise techniques and a meticulous approach to every detail, resulting in a higher quality final product.",
+    "inovation":"Innovative doghouses",
+    "inovationDesc":"Our innovative doghouses represent the pinnacle synthesis of modern design, comfort, and functionality, providing your four-legged friends with a unique experience and comfort all in one."
+
+
+  },
+  "blogCards":{
+    "readMore":"Read more",
+    "blog": " blog",
+    "dogs": "Dog ",
+    "share":"Share",
+    "in":"to",
+    "coppy":"Coppy url"
+  },
+  "cookies":{
+    "Title":"Hello! We use cookies. By continuing to use our site, you agree to our",
+    "cookiePolicy":"Cookie Policy",
+    "cookiePS":"Heeey! Our cookies are chicken-flavored!"
+  },
+  "products": {
+    "pay":"pay",
+    "summery":"Total amount of products",
+    "summeryShort":"total"
+  }
+}
+

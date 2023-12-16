@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Sans-Trial-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Regular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Bold.otf");
+  font-weight: 700;
+}
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 32px */
+/* 48px */
+/* 72px */
+.textButton, .simpleButtonInactive, .simpleButtonLightBlue, .simpleButtonDark, .simpleButtonLight {
+  font-size: 16px;
+  border: none;
+  font-family: "YsabeauInfant";
+  padding: 11px 0;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.textButton:hover, .simpleButtonInactive:hover, .simpleButtonLightBlue:hover, .simpleButtonDark:hover, .simpleButtonLight:hover {
+  cursor: pointer;
+}
+.textButton:disabled, .simpleButtonInactive:disabled, .simpleButtonLightBlue:disabled, .simpleButtonDark:disabled, .simpleButtonLight:disabled {
+  background-color: #999999;
+  cursor: not-allowed;
+}
+
+.simpleButtonLight {
+  background-color: #38736F;
+  color: white;
+}
+
+.simpleButtonDark {
+  background-color: #131313;
+  color: white;
+}
+
+.simpleButtonLightBlue {
+  background-color: #D7E3E2;
+  color: #131313;
+}
+
+.simpleButtonInactive {
+  background-color: #131313;
+  color: #999999;
+}
+.simpleButtonInactive:hover {
+  cursor: pointer;
+}
+
+.outlinedButton {
+  width: 260px;
+  padding: 11px 0;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #999999;
+  color: #131313;
+  font-family: "YsabeauInfant";
+  font-weight: bold;
+}
+.outlinedButton:hover {
+  cursor: pointer;
+}
+
+.textButton {
+  background-color: unset;
+  color: #131313;
+  font-weight: bold;
+}/*# sourceMappingURL=Button.module.css.map */

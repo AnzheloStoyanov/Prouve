@@ -1,0 +1,19 @@
+.VideoScroll {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .wrapper {
+    height: 500vh;
+  }
+  
+  #v0 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  #scrollSection {
+    display: block;
+  }
+  

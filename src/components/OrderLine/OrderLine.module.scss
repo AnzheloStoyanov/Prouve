@@ -1,0 +1,48 @@
+@use '../../assets/css/variables.scss' as v;
+
+.orderLineWrapper {
+    display: flex;
+    flex-direction: column;
+    font-family: v.$YsabeauInfant;
+    margin-bottom: 28px;
+}
+
+.orderStatus {
+    background-color: brown;
+    border-radius: 24px;
+    padding: 5px 35px 8px 35px;
+    color:white;
+    width: 145px;
+    font-size: 24px;
+    text-align: center;
+
+    &.Delivered {
+        background-color: v.$color-dark-green;
+    }
+    &.Refunded {
+        background-color: v.$kobi-color;
+    }
+    &.Processing {
+        background-color: v.$color-gray;
+    }
+}
+
+.orderNumber {
+    font-size: 32px;
+    color: v.$color-dark-green;
+    
+}
+
+.orderInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 72px;
+}
+
+.orderDetails {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    color: v.$color-dark-green;
+}

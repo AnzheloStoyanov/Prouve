@@ -1,0 +1,189 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Sans-Trial-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Regular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Bold.otf");
+  font-weight: 700;
+}
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 32px */
+/* 48px */
+/* 72px */
+.navStyle {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: calc(100% - 200px);
+  margin-left: auto;
+}
+.navStyle nav {
+  padding-bottom: 20px;
+}
+.navStyle nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.navStyle nav ul li {
+  padding-bottom: 5px;
+  margin-left: auto;
+  text-transform: uppercase;
+  color: #131313;
+  font-family: "YsabeauInfant";
+  font-weight: 800;
+  font-size: 18px;
+  display: inline;
+}
+.navStyle nav ul li a:hover {
+  color: #076865;
+}
+.navStyle nav ul li a > img {
+  color: inherit;
+}
+.navStyle nav ul li .cardIcon:hover {
+  fill: #076865;
+}
+.navStyle nav ul .submenu {
+  position: relative;
+  z-index: 1;
+}
+.navStyle nav ul .submenu ul {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  background-color: rgba(7, 104, 101, 0.8);
+  border-radius: 15px;
+  animation: all 7s ease;
+}
+.navStyle nav ul .submenu ul li {
+  min-width: 180px;
+  margin: 0;
+  font-weight: 400;
+  text-transform: none;
+  display: flex;
+  font-size: 18px;
+  color: white;
+}
+.navStyle nav ul .submenu ul li a {
+  padding: 15px 30px;
+  width: 100%;
+}
+.navStyle nav ul .submenu ul li a:hover {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.096);
+}
+.navStyle nav ul .submenu:hover ul {
+  display: grid;
+}
+
+@media (max-width: 1000px) {
+  .navStyle {
+    width: unset;
+  }
+  .navStyle nav ul {
+    display: grid;
+  }
+  .navStyle nav ul li {
+    padding-top: 10px;
+    margin-left: 50px;
+  }
+  .navStyle nav ul .submenu {
+    position: unset;
+  }
+  .navStyle nav ul .submenu ul {
+    position: unset;
+    background-color: inherit;
+  }
+  .navStyle nav ul .submenu ul li {
+    margin: none;
+    font-weight: 400;
+    text-transform: none;
+    display: flex;
+    font-size: 24px;
+    color: inherit;
+  }
+  .navStyle nav ul .submenu ul li a {
+    padding: 5px 30px;
+  }
+  .navStyle nav ul .submenu.submenuOpen:hover ul {
+    display: block;
+  }
+  .navStyle nav ul .submenu.submenuClosed:hover ul {
+    display: none;
+  }
+  .navStyle nav ul .submenu.submenuOpen ul {
+    display: block;
+  }
+  .navStyle nav ul .submenu.submenuOpen > a::after {
+    content: "▴";
+  }
+  .navStyle nav ul .submenu.submenuClosed ul {
+    display: none;
+  }
+  .navStyle nav ul .submenu.submenuClosed > a::after {
+    content: "▾";
+  }
+}
+.languageSwitcher {
+  cursor: pointer;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+.languageSwitcher span {
+  padding: 0 5px;
+}
+.languageSwitcher span:hover {
+  color: #076865;
+}
+
+.activeLanguage {
+  font-weight: normal;
+}/*# sourceMappingURL=NavBar.module.css.map */

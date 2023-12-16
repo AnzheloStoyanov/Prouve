@@ -1,0 +1,251 @@
+.wrapper {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.somePadding {
+  padding: 20px 0;
+}
+
+.separate {
+  padding-bottom: 10px;
+}
+.separate > ::before {
+  content: "";
+  border-top: 3px solid rgba(0, 0, 0, 0.0784313725);
+  width: -webkit-fill-available;
+  position: absolute;
+  left: 0;
+}
+.separate img {
+  padding-left: 0;
+}@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/YsabeauInfant/YsabeauInfant-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Amatic/AmaticSC-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Amatic/AmaticSC-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Sans-Trial-Thin.otf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Sans-Trial-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Regular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Bold.otf");
+  font-weight: 700;
+}
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 32px */
+/* 48px */
+/* 72px */
+.profileWrapper {
+  display: flex;
+  margin: 133px 100px 88px 100px;
+  gap: 40px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  .profileWrapper {
+    flex-direction: column;
+    align-items: center;
+    margin: 22px 36px 20px 36px;
+  }
+  .generalProfileSection {
+    max-width: 317px !important;
+  }
+  .menuSection {
+    min-width: unset !important;
+    width: 100% !important;
+    height: unset !important;
+  }
+}
+.menuSection {
+  flex: 0 1 auto;
+  min-width: 350px;
+  max-width: 400px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.generalProfileSection {
+  flex: 1 1 auto;
+  max-width: 1200px;
+}
+
+.labelContainer {
+  display: flex;
+  width: 100%;
+  background-color: #224643;
+  border-radius: 16px;
+  color: white;
+  font-family: "YsabeauInfant";
+  height: 66px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.labelContainer > button {
+  color: white;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+.labelContainer > span {
+  width: 100%;
+  margin-right: 30px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 32px;
+}
+
+.settingsSection {
+  padding: 40px;
+  background-color: white;
+  border-radius: 16px;
+  width: auto;
+  height: 810;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.sectionHeader {
+  font-family: "YsabeauInfant";
+  font-size: 40px;
+  color: #224643;
+  height: 53px;
+  padding: 5px;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.settingsForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.personalDataForm,
+.securityForm {
+  width: 50%;
+}
+
+.formTitle {
+  font-size: 24px;
+  font-family: "YsabeauInfant";
+  font-weight: bold;
+  color: #224643;
+  margin-bottom: 16px;
+  height: 51px;
+}
+
+.formsWrapper {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 47px;
+}
+
+.preferencesSection {
+  width: auto;
+  height: auto;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.addressSection,
+.alergenSection {
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  border-radius: 16px;
+  padding: 40px;
+}
+
+.allergenList {
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  list-style-type: none;
+  list-style-position: inside;
+  align-items: end;
+  padding-left: 0;
+}
+.allergenList > li {
+  display: flex;
+}
+
+.allergenCheckbox {
+  display: flex;
+  margin-bottom: 20px;
+  font-family: "YsabeauInfant";
+  font-size: 18px;
+  color: #224643;
+  align-items: center;
+}
+
+.addressList {
+  list-style-type: none;
+  padding-left: 0;
+}
+.addressList > li {
+  font-family: "YsabeauInfant";
+  color: #224643;
+  font-size: 18px;
+}
+.addressList > li > p {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.buttonSection {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.changeAddressSection {
+  display: flex;
+  justify-content: center;
+}
+
+.inputWrapper {
+  width: 100%;
+  height: 80px;
+}
+.inputWrapper img {
+  height: 15px;
+  align-self: end;
+  position: relative;
+  bottom: 30px;
+  left: 90%;
+}
+.inputWrapper > div {
+  width: 100%;
+}

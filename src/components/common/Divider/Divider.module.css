@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Sans-Trial-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Regular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Bold.otf");
+  font-weight: 700;
+}
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 32px */
+/* 48px */
+/* 72px */
+.dividerNoText, .divider {
+  width: 100%;
+  color: #999999;
+  margin: 40px 0;
+}
+
+.divider {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  font-family: "YsabeauInfant";
+}
+
+.dividerNoText {
+  display: flex;
+  align-items: center;
+}
+
+.divider::before,
+.divider::after {
+  flex: 1;
+  content: "";
+  padding: 0.5px;
+  background-color: #999999;
+  color: #999999;
+}
+
+.dividerNoText::before,
+.dividerNoText::after {
+  flex: 1;
+  content: "";
+  padding: 0.5px;
+  background-color: #999999;
+  color: #999999;
+}
+
+.divider::before {
+  margin: 7px 20px 7px 0px;
+}
+
+.divider::after {
+  margin: 7px 0px 7px 20px;
+}/*# sourceMappingURL=Divider.module.css.map */

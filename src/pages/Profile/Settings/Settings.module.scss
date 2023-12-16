@@ -1,0 +1,178 @@
+@use '../../../assets/css/variables.scss' as v;
+
+.generalProfileSection {
+    width: 1200px;
+    min-height: 2000px;
+}
+
+.settingsSection {
+    padding: 40px;
+    background-color: white;
+    border-radius: 16px;
+    width: auto;
+    height: 810;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+
+.sectionHeader {
+    font-family: v.$YsabeauInfant;
+    font-size: 40px;
+    color: v.$color-dark-green;
+    height: 53px;
+    padding: 5px;
+    font-weight: bold;
+    align-self: flex-start;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 24px;
+    }
+}
+
+.settingsForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.personalDataForm,
+.securityForm {
+    width: 50%;
+}
+
+.formTitle {
+    font-size: 24px;
+    font-family: v.$YsabeauInfant;
+    font-weight: bold;
+    color: v.$color-dark-green;
+    margin-bottom: 16px;
+    height: 51px;
+}
+
+.formsWrapper {
+    display: flex;
+    gap: 75px;
+    margin-bottom: 47px;
+
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+
+        .personalDataForm,
+        .securityForm {
+            width: 100%;
+        }
+    }
+}
+
+.preferencesSection {
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column-reverse;
+
+        .addressSection,
+        .alergenSection {
+            width: auto;
+            padding: 0;
+            padding: 40px;
+        }
+    }
+}
+
+.addressSection,
+.alergenSection {
+    height: 100%;
+    width: calc(50% - 20px);
+    background-color: white;
+    border-radius: 16px;
+    padding: 40px;
+}
+
+.allergenList {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    list-style-type: none;
+    list-style-position: inside;
+    align-items: end;
+    padding-left: 0;
+
+    @media screen and (max-width:1000px) {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+    }
+
+    &>li {
+        display: flex;
+    }
+}
+
+.allergenCheckbox {
+    display: flex;
+    margin-bottom: 20px;
+    font-family: v.$YsabeauInfant;
+    font-size: 18px;
+    color: v.$color-dark-green;
+    align-items: center;
+}
+
+.addressList {
+    list-style-type: none;
+    padding-left: 0;
+
+    &>li {
+        font-family: v.$YsabeauInfant;
+        color: v.$color-dark-green;
+        font-size: 18px;
+
+        &>p {
+            font-weight: bold;
+            font-size: 24px;
+        }
+    }
+}
+
+.buttonSection {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.changeAddressSection {
+    display: flex;
+    justify-content: center;
+}
+
+.inputWrapper {
+    width: 100%;
+    height: 80px;
+
+    & img {
+        height: 15px;
+        align-self: end;
+        position: relative;
+        bottom: 30px;
+        left: 90%;
+    }
+
+    &>div {
+        width: 100%;
+    }
+}
+
+.datepickerLabel {
+    font-family: v.$YsabeauInfant;
+    color: v.$color-dark-green;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}

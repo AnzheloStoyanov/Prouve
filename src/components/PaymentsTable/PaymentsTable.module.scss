@@ -1,0 +1,48 @@
+@use '../../assets/css/variables.scss' as v;
+
+table {
+    border-collapse: collapse;
+    color: v.$color-dark-green;
+    font-family: v.$YsabeauInfant;
+    font-weight: bold;
+    font-size: 18px;
+
+    &>thead {
+        height: 58px;
+        background-color: rgba($color: #999999, $alpha: 0.3);
+        border: none;
+        text-align: left;
+
+        &>tr {
+            border-radius: 16px !important;
+
+            &>th:first-child {
+                border-radius: 16px 0 0 16px !important;
+            }
+
+            &>th:last-child {
+                border-radius: 0 16px 16px 0 !important;
+            }
+        }
+
+    }
+
+    tbody {
+
+        &>tr:nth-child(even) {
+            background-color:rgba($color: #999999, $alpha: 0.05);
+        }
+
+        &>tr {
+
+            &>td {
+                height: 72px;
+                border-bottom: 1px solid #cacaca;
+            }
+        }
+    }
+}
+
+tr {
+    text-align: center;
+}

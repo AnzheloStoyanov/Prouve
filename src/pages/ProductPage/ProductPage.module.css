@@ -1,0 +1,243 @@
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Sans-Trial-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Regular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Bold.otf");
+  font-weight: 700;
+}
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 32px */
+/* 48px */
+/* 72px */
+h1 {
+  font-family: "YsabeauInfant";
+  font-size: 40px;
+}
+
+p,
+h4 {
+  font-family: "YsabeauInfant";
+  font-size: 20px;
+}
+
+.falseAlergen {
+  background: #ebf1f0;
+}
+
+.falseAlergen,
+.trueAlergen {
+  display: flex;
+  width: 250px;
+  padding: 10px 30px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.productMainContainer {
+  font-family: "YsabeauInfant";
+  color: #131313;
+  padding: 0 6%;
+  margin-top: 100px;
+}
+.productMainContainer .goBackButton {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.productMainContainer .carouselAndMainInfo {
+  display: flex;
+}
+.productMainContainer .productMainInfo {
+  max-width: 23vw;
+  margin-left: 150px;
+  margin-left: 9vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.productMainContainer .productMainInfo .productCount {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.productMainContainer .productMainInfo .productCount span {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.productMainContainer .productMainInfo .productCount button {
+  top: 764px;
+  width: 18px;
+  height: 37px;
+  /* UI Properties */
+  background: rgba(56, 115, 111, 0.2);
+  border-radius: 5px;
+  border-width: 0;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productMainContainer .productMainInfo .productCount input {
+  width: 34px;
+  height: 35px;
+  text-align: center;
+  border: 1px solid rgba(56, 115, 111, 0.3);
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.productMainContainer .productMainInfo .productCount input:focus {
+  outline: none;
+}
+.productMainContainer .productMainInfo .buttonContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 70px;
+}
+.productMainContainer .tabsHeader {
+  height: 70px;
+  display: flex;
+  border-radius: 20px 20px 0 0;
+  background: #ebf1f0;
+}
+.productMainContainer .tabsHeader div {
+  height: 100%;
+  display: flex;
+  padding: 0 1.6vw;
+  border-width: 0;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.productMainContainer .tabsInfo {
+  padding: 30px 30px 100px;
+  background: white;
+  border-radius: 0 0 20px 20px;
+}
+.productMainContainer .tabs {
+  margin-top: 90px;
+  margin-bottom: 100px;
+}
+.productMainContainer .tabs .tabOne {
+  border-radius: 20px 0 0 0;
+}
+
+.reviewRate {
+  display: flex;
+  align-items: center;
+}
+
+.ClientsComments {
+  background-color: rgba(234, 156, 183, 0.2);
+  padding: 40px 6%;
+}
+.ClientsComments p {
+  margin-top: 0;
+}
+.ClientsComments h4 {
+  margin: 0;
+}
+
+.SimilarProducts {
+  padding: 0 6%;
+}
+
+.ClientsProfileImg {
+  width: 80px;
+  height: 80px;
+  background: #EA9CB7;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.clientsDetails {
+  display: flex;
+}
+
+.SimilarProductsCards {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1000px) {
+  .productMainContainer .carouselAndMainInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .productMainContainer .carouselAndMainInfo .navigation-wrapper {
+    position: relative;
+    height: 81vw;
+    width: 81vw;
+  }
+  .productMainContainer .carouselAndMainInfo .productMainInfo {
+    width: 85vw;
+    max-width: unset;
+  }
+  .productMainContainer .carouselAndMainInfo .productMainInfo h1 {
+    display: none;
+  }
+  .reviewRate {
+    display: none;
+  }
+  .SimilarProductsCards {
+    flex-wrap: wrap;
+  }
+  .falseAlergen,
+  .trueAlergen {
+    display: flex;
+    width: 100%;
+    padding: 10px 30px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+}/*# sourceMappingURL=ProductPage.module.css.map */

@@ -1,0 +1,22 @@
+@use '../../../assets/css/variables.scss' as v;
+
+.selectListWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: v.$YsabeauInfant;
+
+    select {
+        height: 44px;
+        width: auto;
+        border-radius: 8px;
+        border: 1px solid v.$color-gray;
+        margin-top: 10px !important;
+    }
+
+    label {
+        color: v.$color-dark-green;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}

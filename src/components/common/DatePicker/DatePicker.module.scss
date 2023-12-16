@@ -1,0 +1,18 @@
+@use '../../../assets/css/variables.scss' as v;
+
+.header {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: v.$YsabeauInfant;
+    color: v.$color-dark-green;
+}
+
+.MuiDateCalendar-root {
+    background-color: red !important;
+}
+
+.MuiPickersDay-today {
+    color: red !important; 
+    background-color: red !important;
+}

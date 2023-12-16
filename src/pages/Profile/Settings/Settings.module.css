@@ -1,0 +1,225 @@
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "YsabeauInfant";
+  src: url("assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Sans-Trial-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Regular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "BackwardsSans";
+  src: url("assets/fonts/Backwards-Sans-Trial/Backwards-Script-Trial-Bold.otf");
+  font-weight: 700;
+}
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 24px */
+/* 32px */
+/* 48px */
+/* 72px */
+.generalProfileSection {
+  width: 1200px;
+  min-height: 2000px;
+}
+
+.settingsSection {
+  padding: 40px;
+  background-color: white;
+  border-radius: 16px;
+  width: auto;
+  height: 810;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.sectionHeader {
+  font-family: "YsabeauInfant";
+  font-size: 40px;
+  color: #131313;
+  height: 53px;
+  padding: 5px;
+  font-weight: bold;
+  align-self: flex-start;
+}
+@media screen and (max-width: 1000px) {
+  .sectionHeader {
+    font-size: 24px;
+  }
+}
+
+.settingsForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.personalDataForm,
+.securityForm {
+  width: 50%;
+}
+
+.formTitle {
+  font-size: 24px;
+  font-family: "YsabeauInfant";
+  font-weight: bold;
+  color: #131313;
+  margin-bottom: 16px;
+  height: 51px;
+}
+
+.formsWrapper {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 47px;
+}
+@media screen and (max-width: 1000px) {
+  .formsWrapper {
+    flex-direction: column;
+  }
+  .formsWrapper .personalDataForm,
+  .formsWrapper .securityForm {
+    width: 100%;
+  }
+}
+
+.preferencesSection {
+  width: auto;
+  height: auto;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1000px) {
+  .preferencesSection {
+    flex-direction: column-reverse;
+  }
+  .preferencesSection .addressSection,
+  .preferencesSection .alergenSection {
+    width: auto;
+    padding: 0;
+    padding: 40px;
+  }
+}
+
+.addressSection,
+.alergenSection {
+  height: 100%;
+  width: calc(50% - 20px);
+  background-color: white;
+  border-radius: 16px;
+  padding: 40px;
+}
+
+.allergenList {
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  list-style-type: none;
+  list-style-position: inside;
+  align-items: end;
+  padding-left: 0;
+}
+@media screen and (max-width: 1000px) {
+  .allergenList {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+}
+.allergenList > li {
+  display: flex;
+}
+
+.allergenCheckbox {
+  display: flex;
+  margin-bottom: 20px;
+  font-family: "YsabeauInfant";
+  font-size: 18px;
+  color: #131313;
+  align-items: center;
+}
+
+.addressList {
+  list-style-type: none;
+  padding-left: 0;
+}
+.addressList > li {
+  font-family: "YsabeauInfant";
+  color: #131313;
+  font-size: 18px;
+}
+.addressList > li > p {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.buttonSection {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.changeAddressSection {
+  display: flex;
+  justify-content: center;
+}
+
+.inputWrapper {
+  width: 100%;
+  height: 80px;
+}
+.inputWrapper img {
+  height: 15px;
+  align-self: end;
+  position: relative;
+  bottom: 30px;
+  left: 90%;
+}
+.inputWrapper > div {
+  width: 100%;
+}
+
+.datepickerLabel {
+  font-family: "YsabeauInfant";
+  color: #131313;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}/*# sourceMappingURL=Settings.module.css.map */
